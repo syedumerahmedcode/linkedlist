@@ -17,10 +17,11 @@
 
 ## Types of linked list
 
-- Singly linked list
-- Circular singly linked list
-- Doubly linked list
-- Circular doubly linked list
+- Singly linked list(Example: any trivial application of a lined list)
+- Circular singly linked list(Example: a chess game in that how the turns switches among players)
+- Doubly linked list(Example: a music play list)
+- Circular doubly linked list(Example: ctrl+tab/ctrl+shift+tab function in Linux OS)
+
 
 
 
