@@ -15,6 +15,15 @@
 - Random access - accessing an elements in the case of a linked list is NOT efficient as we have to traverse through all elements till we reach the desired elements. O(n) = n
 
 
+## Types of linked list
+
+- Singly linked list
+- Circular singly linked list
+- Doubly linked list
+- Circular doubly linked list
+
+
+
  
 
 
