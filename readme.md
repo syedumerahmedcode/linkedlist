@@ -1,0 +1,1 @@
+- Linked list is a form of sequential collection and it does not have to be in order. A linked list is made up of independent nodes that may contain any type of data and it has a reference to the next node in the link.   
