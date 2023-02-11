@@ -13,17 +13,15 @@ public class SinglyLinedList {
 		head = node;
 		tail = node;
 		size++;
-
 		return node;
-
 	}
 
 	// Insert method for SinglyLinkedList
-	public void insertinLinkedList(int nodeValue, int location) {
+	public void insertInLinkedList(int nodeValue, int location) {
 		Node node = new Node();
 		node.value = nodeValue;
 		if (head == null) {
-			// This means that the linkedlist does not exists yet.
+			// This means that the linked list does not exists yet.
 			createSinglyLinkedList(nodeValue);
 			return;
 		} else if (location == 0) {
@@ -37,23 +35,23 @@ public class SinglyLinedList {
 			tail = node;
 		} else {
 			// This means that we have to insert the node somewhere in the middle of the
-			// linkedlist
+			// linked list
 			Node tempnode = head;
 			int index = 0;
 			while (index < location - 1) {
-				// We iterate over till we reach the position in the linkedlist where a new node
+				// We iterate over till we reach the position in the linked list where a new
+				// node
 				// should be inserted.
 				tempnode = tempnode.next;
 				index++;
 			}
-			// We are at the location in the linkedlist where the new node should be
+			// We are at the location in the linked list where the new node should be
 			// inserted.
 			Node nextNode = tempnode.next;
 			tempnode.next = node;
 			node.next = nextNode;
 		}
 		size++;
-
 	}
 
 }
