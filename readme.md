@@ -32,6 +32,19 @@ The creation of a singly linked list follows the following pseudo code:
 
 - TODO: Add a diagram representing creation of singly linked list.
 
+# Insertion to Linked List in memory
+
+The following three variations are  possible for insertion in a singly linked list:
+
+- At the beginning of a linked list
+- After a node in the middle of linekd list
+- At the end of a linked list
+
+- TODO: Create 3 diagrams showing step-by-step of insertion of Singky Linked List in memory.
+
+
+
+
 
 
 
