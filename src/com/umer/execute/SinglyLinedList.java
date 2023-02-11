@@ -18,4 +18,42 @@ public class SinglyLinedList {
 
 	}
 
+	// Insert method for SinglyLinkedList
+	public void insertinLinkedList(int nodeValue, int location) {
+		Node node = new Node();
+		node.value = nodeValue;
+		if (head == null) {
+			// This means that the linkedlist does not exists yet.
+			createSinglyLinkedList(nodeValue);
+			return;
+		} else if (location == 0) {
+			node.next = head;
+			head = node;
+		} else if (location >= size) {
+			// Since the location is greater than the size of the node, This means that the
+			// node should be inserted at the end of the list.
+			node.next = null;
+			tail.next = node;
+			tail = node;
+		} else {
+			// This means that we have to insert the node somewhere in the middle of the
+			// linkedlist
+			Node tempnode = head;
+			int index = 0;
+			while (index < location - 1) {
+				// We iterate over till we reach the position in the linkedlist where a new node
+				// should be inserted.
+				tempnode = tempnode.next;
+				index++;
+			}
+			// We are at the location in the linkedlist where the new node should be
+			// inserted.
+			Node nextNode = tempnode.next;
+			tempnode.next = node;
+			node.next = nextNode;
+		}
+		size++;
+
+	}
+
 }
