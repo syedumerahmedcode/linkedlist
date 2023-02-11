@@ -1,4 +1,4 @@
-package com.umer.execute;
+package com.umer.singlylinkedlist;
 
 public class SinglyLinedList {
 	public Node head;
