@@ -11,7 +11,7 @@
 
 # Linked list
 - Elements of linked list are independent objects. This means that we can remove an object from the middle of a linked list 
-- Variable size - the size of a linked list is not pre-defined.
+- Variable size - the size of a linked list is not pre-defined. This allows us dynamic resizing at runtime.
 - Random access - accessing an elements in the case of a linked list is NOT efficient as we have to traverse through all elements till we reach the desired elements. O(n) = n
 
 
@@ -22,7 +22,9 @@
 - Doubly linked list(Example: a music play list)
 - Circular doubly linked list(Example: ctrl+tab/ctrl+shift+tab function in Linux OS)
 
+# Linked list in memory
 
+- TODO: Add a diagram representing linked list in memory.
 
 
  
