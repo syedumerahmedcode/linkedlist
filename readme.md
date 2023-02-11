@@ -40,7 +40,9 @@ The following three variations are  possible for insertion in a singly linked li
 - After a node in the middle of linekd list
 - At the end of a linked list
 
-- TODO: Create 3 diagrams showing step-by-step of insertion of Singky Linked List in memory.
+- TODO: Create 3 diagrams showing step-by-step of insertion of Singly Linked List in memory. (89)
+
+
 
 
 
