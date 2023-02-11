@@ -26,6 +26,14 @@
 
 - TODO: Add a diagram representing linked list in memory.
 
+# Creation of a singly linked list
+
+The creation of a singly linked list follows the following pseudo code:
+
+- TODO: Add a diagram representing creation of singly linked list.
+
+
+
 
  
 
