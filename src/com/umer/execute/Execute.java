@@ -30,6 +30,9 @@ public class Execute {
 		singlyLinedList.insertInLinkedList(7, 7);
 		System.out.println(TRAVERSING_THROUGH_THE_CURRENT_STATE_OF_THE_SINGLY_LINKED_LIST);
 		singlyLinedList.traverseSinglyLinkedList();
+		
+		singlyLinedList.searchNode(43);
+		singlyLinedList.searchNode(99);
 
 	}
 

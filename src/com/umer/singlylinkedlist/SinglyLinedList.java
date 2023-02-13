@@ -53,22 +53,38 @@ public class SinglyLinedList {
 		}
 		size++;
 	}
-	
+
 	// Traversal of singly linked list
 	public void traverseSinglyLinkedList() {
-		if(head==null) {
+		if (head == null) {
 			System.out.println("Singly linked list does not exist.");
-		}else {
-			Node tempNode=head;
+		} else {
+			Node tempNode = head;
 			for (int i = 0; i < size; i++) {
 				System.out.print(tempNode.value);
-				if(i<size-1) {
+				if (i < size - 1) {
 					System.out.print("-->");
 				}
-				tempNode=tempNode.next;
+				tempNode = tempNode.next;
 			}
 		}
 		System.out.println("");
+	}
+
+	// Search for a node
+	public boolean searchNode(int nodeValue) {
+		if (head != null) {
+			Node tempNode = head;
+			for (int i = 0; i < size; i++) {
+				if (tempNode.value == nodeValue) {
+					System.out.println("Found the node value " + nodeValue + " at location: " + i);
+					return true;
+				}
+				tempNode = tempNode.next;
+			}
+		}
+		System.out.println("Node value not found.");
+		return false;
 	}
 
 }

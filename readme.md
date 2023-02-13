@@ -46,7 +46,12 @@ The following three variations are  possible for insertion in a singly linked li
 # Traversal of a singly linked list
 
 - TODO: Add a diagram depicting the traversal in a singly linked list. (91)
- 
+Time complexity: O(n)
+
+# Search in a singly linked list
+
+- TODO: Add a diagram depicting the searching a value in a singly linked list. (92)
+Time complexity: O(n)
 
 
 
