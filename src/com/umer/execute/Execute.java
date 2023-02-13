@@ -4,6 +4,7 @@ import com.umer.singlylinkedlist.SinglyLinedList;
 
 public class Execute {
 
+	private static final String TRAVERSING_THROUGH_THE_CURRENT_STATE_OF_THE_SINGLY_LINKED_LIST = "Traversing through the current state of the singly linked list";
 	private static final String COMMA = ",";
 	private static final String THE_CURRENT_STATUS_OF_THE_SINGLY_LINKED_LIST_SHOULD_BE = "The current status of the singly linked list should be";
 
@@ -14,7 +15,7 @@ public class Execute {
 		singlyLinedList.insertInLinkedList(6, 1);
 		System.out.println(THE_CURRENT_STATUS_OF_THE_SINGLY_LINKED_LIST_SHOULD_BE + " 5,6 --->"
 				+ singlyLinedList.head.value + COMMA + singlyLinedList.head.next.value);
-		singlyLinedList.insertInLinkedList(9, 23);
+		singlyLinedList.insertInLinkedList(9, 2);
 		System.out.println(
 				THE_CURRENT_STATUS_OF_THE_SINGLY_LINKED_LIST_SHOULD_BE + " 5,6,9 --->" + singlyLinedList.head.value
 						+ COMMA + singlyLinedList.head.next.value + COMMA + singlyLinedList.head.next.next.value);
@@ -22,6 +23,13 @@ public class Execute {
 		System.out.println(THE_CURRENT_STATUS_OF_THE_SINGLY_LINKED_LIST_SHOULD_BE + " 5,6,43,9 --->"
 				+ singlyLinedList.head.value + COMMA + singlyLinedList.head.next.value + COMMA
 				+ singlyLinedList.head.next.next.value + COMMA + singlyLinedList.head.next.next.next.value);
+		
+		singlyLinedList.insertInLinkedList(4, 4);
+		singlyLinedList.insertInLinkedList(5, 5);
+		singlyLinedList.insertInLinkedList(6, 6);
+		singlyLinedList.insertInLinkedList(7, 7);
+		System.out.println(TRAVERSING_THROUGH_THE_CURRENT_STATE_OF_THE_SINGLY_LINKED_LIST);
+		singlyLinedList.traverseSinglyLinkedList();
 
 	}
 

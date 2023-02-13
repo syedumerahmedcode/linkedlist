@@ -43,7 +43,10 @@ The following three variations are  possible for insertion in a singly linked li
 - TODO: Create 3 diagrams showing step-by-step of insertion of Singly Linked List in memory. (89)
 
 
+# Traversal of a singly linked list
 
+- TODO: Add a diagram depicting the traversal in a singly linked list. (91)
+ 
 
 
 
