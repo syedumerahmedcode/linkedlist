@@ -62,6 +62,14 @@ Time complexity: O(n)
 - TODO: Add a diagram depicting the deletion in a singly linked list. (95)
 Time complexity: O(1)
 
+# Time and space complexity of the singly linked list
+- TODO: Add a diagram depicting the deletion in a singly linked list. (96)
+
+
+## Circular singly linked list
+- TODO: Add a diagram depicting the deletion in a singly linked list. (98)
+
+
 
 
 
