@@ -53,10 +53,15 @@ Time complexity: O(n)
 - TODO: Add a diagram depicting the searching a value in a singly linked list. (92)
 Time complexity: O(n)
 
-# Singly linked list deletion
+# Singly linked list deletion of a node
 
 - TODO: Add a diagram depicting the deletion in a singly linked list. (93)
 Time complexity: O(n)
+
+# Deleting entire singly linked list
+- TODO: Add a diagram depicting the deletion in a singly linked list. (95)
+
+
 
 
 
