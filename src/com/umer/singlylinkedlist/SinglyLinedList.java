@@ -130,7 +130,14 @@ public class SinglyLinedList {
 			tempNode.next = tempNode.next.next;
 			size--;
 		}
-
 	}
+	
+	// Delete entire singly linked list
+	public void deleteSinglyLinkedList() {
+		head=tail=null;
+		System.out.println("The singly linked list is deleted successfully.");
+		size=0;
+	}
+	
 
 }

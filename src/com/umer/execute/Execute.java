@@ -43,6 +43,9 @@ public class Execute {
 		singlyLinedList.deleteNode(50);
 		singlyLinedList.traverseSinglyLinkedList();
 		
+		singlyLinedList.deleteSinglyLinkedList();
+		singlyLinedList.traverseSinglyLinkedList();
+		
 		
 		
 
