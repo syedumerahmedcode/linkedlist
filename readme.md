@@ -56,7 +56,7 @@ Time complexity: O(n)
 # Singly linked list deletion
 
 - TODO: Add a diagram depicting the deletion in a singly linked list. (93)
-
+Time complexity: O(n)
 
 
 
