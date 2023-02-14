@@ -33,6 +33,18 @@ public class Execute {
 		
 		singlyLinedList.searchNode(43);
 		singlyLinedList.searchNode(99);
+		
+		System.out.println(TRAVERSING_THROUGH_THE_CURRENT_STATE_OF_THE_SINGLY_LINKED_LIST);
+		singlyLinedList.traverseSinglyLinkedList();
+		singlyLinedList.deleteNode(6);
+		singlyLinedList.traverseSinglyLinkedList();
+		singlyLinedList.deleteNode(0);
+		singlyLinedList.traverseSinglyLinkedList();
+		singlyLinedList.deleteNode(50);
+		singlyLinedList.traverseSinglyLinkedList();
+		
+		
+		
 
 	}
 
