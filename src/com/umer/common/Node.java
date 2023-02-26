@@ -1,4 +1,4 @@
-package com.umer.singlylinkedlist;
+package com.umer.common;
 
 public class Node {
 	public int value;

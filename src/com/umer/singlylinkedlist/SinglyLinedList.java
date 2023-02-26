@@ -1,5 +1,7 @@
 package com.umer.singlylinkedlist;
 
+import com.umer.common.Node;
+
 public class SinglyLinedList {
 	public Node head;
 	public Node tail;
