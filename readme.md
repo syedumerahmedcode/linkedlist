@@ -67,7 +67,7 @@ Time complexity: O(1)
 
 
 ## Circular singly linked list
-- TODO: Add a diagram depicting the deletion in a singly linked list. (98)
+- TODO: Add a diagram depicting the deletion in a singly linked list. (98) x2
 
 
 
