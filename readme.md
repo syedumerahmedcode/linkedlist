@@ -75,6 +75,7 @@ Time complexity: O(1)
 
 # Insertion - Circular singly linked list
 -  Diagram with changes (1x) (100).
+- Time complexity of insertion of a node: O(n).
 
  
 
