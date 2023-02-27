@@ -65,6 +65,11 @@ public class Execute {
 		System.out.println(
 				"Since the current size is only 1, hence the next node value of circular singly linked list is also--->"
 						+ circularSinglyLinkedList.head.next.value);
+		
+		circularSinglyLinkedList.insertIntoCircularSinglyLinkedList(4, 0);
+		circularSinglyLinkedList.insertIntoCircularSinglyLinkedList(4, 1);
+		circularSinglyLinkedList.insertIntoCircularSinglyLinkedList(5, 8);
+		System.out.println(circularSinglyLinkedList.head.value);
 
 	}
 
