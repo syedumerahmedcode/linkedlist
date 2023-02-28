@@ -59,6 +59,7 @@ public class CircularSinglyLinkedList {
 				if (index != size - 1) {
 					System.out.print("-->");
 				}
+				tempNode=tempNode.next;
 			}
 		} else {
 			System.out.println("The circular linked list does not exist.");
