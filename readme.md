@@ -77,7 +77,11 @@ Time complexity: O(1)
 -  Diagram with changes (1x) (100).
 - Time complexity of insertion of a node: O(n).
 
- 
+# Traversal of a circular singly linked list
+
+- TODO: Add a diagram depicting the traversal in a circular singly linked list. (102)
+Time complexity: O(n) 
+
 
 
 

@@ -18,36 +18,51 @@ public class CircularSinglyLinkedList {
 		size = 1;
 		return head;
 	}
-	
+
 	public void insertIntoCircularSinglyLinkedList(int nodeValue, int location) {
-		Node node=new Node();
-		node.value=nodeValue;
-		// Check if the circular singly linked list exists or not 
-		if(head==null) {
+		Node node = new Node();
+		node.value = nodeValue;
+		// Check if the circular singly linked list exists or not
+		if (head == null) {
 			// If it doles not exist, create it.
 			CreateCircularSinglyLinkedList(nodeValue);
 			return;
-		}else if(location==0) {
+		} else if (location == 0) {
 			// inserting the node at the beginning of the list.
-			node.next=head;
-			head=node;
-			tail.next=head;
-		}else if (location>=size) {
+			node.next = head;
+			head = node;
+			tail.next = head;
+		} else if (location >= size) {
 			// inserting at the end of the list.
-			tail.next=node;
-			tail=node;
-			tail.next=head;			
-		}else {
-			Node tempNode=head;
-			int index=0;
-			while (index <location-1) {
-				tempNode=tempNode.next;
+			tail.next = node;
+			tail = node;
+			tail.next = head;
+		} else {
+			Node tempNode = head;
+			int index = 0;
+			while (index < location - 1) {
+				tempNode = tempNode.next;
 				index++;
 			}
-			node.next=tempNode.next;
-			tempNode.next=node;
+			node.next = tempNode.next;
+			tempNode.next = node;
 		}
 		size++;
+	}
+
+	// Traversal method
+	public void traverseCircularSinglyLinkedList() {
+		if (head != null) {
+			Node tempNode = head;
+			for (int index = 0; index < size; index++) {
+				System.out.print(tempNode.value);
+				if (index != size - 1) {
+					System.out.print("-->");
+				}
+			}
+		} else {
+			System.out.println("The circular linked list does not exist.");
+		}
 	}
 
 }
