@@ -59,10 +59,29 @@ public class CircularSinglyLinkedList {
 				if (index != size - 1) {
 					System.out.print("-->");
 				}
-				tempNode=tempNode.next;
+				tempNode = tempNode.next;
 			}
 		} else {
 			System.out.println("The circular linked list does not exist.");
+		}
+	}
+
+	// Searching
+	public boolean searchnode(int nodeValue) {
+		if (head != null) {
+			Node tempNode = head;
+			for (int index = 0; index < size; index++) {
+				if (tempNode.value == nodeValue) {
+					System.out.println("Found value:" + nodeValue + " at location: " + index);
+					return true;
+				}
+				tempNode = tempNode.next;
+			}
+			System.out.println("Did not find the value " + nodeValue + " in the circular singly linked list.");
+			return false;
+		} else {
+			System.out.println("The list is empty.");
+			return false;
 		}
 	}
 

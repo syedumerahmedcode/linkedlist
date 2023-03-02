@@ -82,7 +82,10 @@ Time complexity: O(1)
 - TODO: Add a diagram depicting the traversal in a circular singly linked list. (102)
 Time complexity: O(n) 
 
+# Search in a circular singly linked list
 
+- TODO: Add a diagram depicting the searching a value in a singly linked list. (103)
+Time complexity: O(n)
 
 
 

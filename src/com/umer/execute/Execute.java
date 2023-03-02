@@ -71,6 +71,10 @@ public class Execute {
 		circularSinglyLinkedList.insertIntoCircularSinglyLinkedList(7, 8);
 		System.out.println(circularSinglyLinkedList.head.value);
 		circularSinglyLinkedList.traverseCircularSinglyLinkedList();
+		System.out.println();
+		circularSinglyLinkedList.searchnode(5);
+		circularSinglyLinkedList.searchnode(500);
+		circularSinglyLinkedList.searchnode(7);
 
 	}
 
