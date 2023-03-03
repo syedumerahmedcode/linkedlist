@@ -128,4 +128,16 @@ public class CircularSinglyLinkedList {
 		}
 	}
 
+	// Deleting the entire circular singly linked list
+	public void deleteCircularSinglyLinkedlIst() {
+		if (head == null) {
+			System.out.println("The circular singly linked list does not existg.");
+		} else {
+			head = null;
+			tail.next = null;
+			tail = null;
+			System.out.println("The circular singly linked list has been deleted.");
+		}
+	}
+
 }

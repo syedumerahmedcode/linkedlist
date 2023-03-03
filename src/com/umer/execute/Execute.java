@@ -76,6 +76,8 @@ public class Execute {
 		circularSinglyLinkedList.searchnode(7);
 		circularSinglyLinkedList.deleteNode(2);
 		circularSinglyLinkedList.traverseCircularSinglyLinkedList();
+		circularSinglyLinkedList.deleteCircularSinglyLinkedlIst();
+		circularSinglyLinkedList.traverseCircularSinglyLinkedList();
 
 	}
 
