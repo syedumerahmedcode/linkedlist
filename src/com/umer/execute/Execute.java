@@ -51,7 +51,7 @@ public class Execute {
 		System.out.println();
 
 		System.out.println("Checking operations of circular singly linked list.");
-		
+
 		System.out.println();
 		System.out.println();
 
@@ -65,16 +65,17 @@ public class Execute {
 		System.out.println(
 				"Since the current size is only 1, hence the next node value of circular singly linked list is also--->"
 						+ circularSinglyLinkedList.head.next.value);
-		
+
 		circularSinglyLinkedList.insertIntoCircularSinglyLinkedList(4, 0);
 		circularSinglyLinkedList.insertIntoCircularSinglyLinkedList(6, 1);
 		circularSinglyLinkedList.insertIntoCircularSinglyLinkedList(7, 8);
 		System.out.println(circularSinglyLinkedList.head.value);
 		circularSinglyLinkedList.traverseCircularSinglyLinkedList();
-		System.out.println();
 		circularSinglyLinkedList.searchnode(5);
 		circularSinglyLinkedList.searchnode(500);
 		circularSinglyLinkedList.searchnode(7);
+		circularSinglyLinkedList.deleteNode(2);
+		circularSinglyLinkedList.traverseCircularSinglyLinkedList();
 
 	}
 

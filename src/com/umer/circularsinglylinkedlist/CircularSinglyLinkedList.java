@@ -61,6 +61,7 @@ public class CircularSinglyLinkedList {
 				}
 				tempNode = tempNode.next;
 			}
+			System.out.println();
 		} else {
 			System.out.println("The circular linked list does not exist.");
 		}
@@ -82,6 +83,48 @@ public class CircularSinglyLinkedList {
 		} else {
 			System.out.println("The list is empty.");
 			return false;
+		}
+	}
+
+	// Deleting a node
+	public void deleteNode(int location) {
+		if (head == null) {
+			System.out.println("The circular linked list does not exist.");
+			return;
+		} else if (location == 0) {
+			// delete the element from the beginning of circular singly linked list
+			head = head.next;
+			tail.next = head;
+			size--;
+			if (size == 0) {
+				tail = null;
+				head.next = null;
+				head = null;
+			}
+		} else if (location >= size) {
+			// delete the element from the end of circular singly linked list
+			Node tempNode = head;
+			for (int index = 0; index < size - 1; index++) {
+				tempNode = tempNode.next;
+			}
+			if (tempNode == null) {
+				head.next = null;
+				tail = head = null;
+				size--;
+				return;
+			}
+			tempNode.next = head;
+			tail = tempNode;
+			size--;
+		} else {
+			// delete the element from somewhere in between of the circular singly linked
+			// list
+			Node tempnode = head;
+			for (int index = 0; index < location - 1; index++) {
+				tempnode = tempnode.next;
+			}
+			tempnode.next = tempnode.next.next;
+			size--;
 		}
 	}
 

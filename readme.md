@@ -89,8 +89,8 @@ Time complexity: O(n)
 
 # Deletion from a circular singly linked list
 
-- TODO: Add a diagram depicting the searching a value in a singly linked list. (104)
-Time complexity: O(?)
+- TODO: Add a diagram depicting the searching a value in a singly linked list. (104+105)
+Time complexity: O(n)
 
 
 
