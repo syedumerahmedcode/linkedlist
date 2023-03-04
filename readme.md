@@ -98,7 +98,9 @@ Time complexity: O(1)
 # Time and space complexity of the circular singly linked list
 - TODO: Add a diagram depicting the deletion in a singly linked list. (108)
 
-
+## Doubly linked list
+- TODO: Add a diagram depicting the deletion in a singly linked list. (110)
+- Time complexity of creation with one node: O(1).
 
  
 
