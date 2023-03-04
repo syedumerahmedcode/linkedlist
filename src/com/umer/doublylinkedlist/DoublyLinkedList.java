@@ -7,7 +7,7 @@ public class DoublyLinkedList {
 	DoublyNode tail;
 	int size;
 
-	public DoublyNode createDoublylinkedList(int nodeValue) {
+	public DoublyNode create(int nodeValue) {
 		head = new DoublyNode();
 		DoublyNode newNode = new DoublyNode();
 		newNode.value = nodeValue;

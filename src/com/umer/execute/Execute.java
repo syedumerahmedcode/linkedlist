@@ -13,41 +13,41 @@ public class Execute {
 
 	public static void main(String[] args) {
 		SinglyLinedList singlyLinedList = new SinglyLinedList();
-		singlyLinedList.createSinglyLinkedList(5);
+		singlyLinedList.create(5);
 		System.out.println("Currently, the head of the linked list is: " + singlyLinedList.head.value);
-		singlyLinedList.insertInLinkedList(6, 1);
+		singlyLinedList.insert(6, 1);
 		System.out.println(THE_CURRENT_STATUS_OF_THE_SINGLY_LINKED_LIST_SHOULD_BE + " 5,6 --->"
 				+ singlyLinedList.head.value + COMMA + singlyLinedList.head.next.value);
-		singlyLinedList.insertInLinkedList(9, 2);
+		singlyLinedList.insert(9, 2);
 		System.out.println(
 				THE_CURRENT_STATUS_OF_THE_SINGLY_LINKED_LIST_SHOULD_BE + " 5,6,9 --->" + singlyLinedList.head.value
 						+ COMMA + singlyLinedList.head.next.value + COMMA + singlyLinedList.head.next.next.value);
-		singlyLinedList.insertInLinkedList(43, 2);
+		singlyLinedList.insert(43, 2);
 		System.out.println(THE_CURRENT_STATUS_OF_THE_SINGLY_LINKED_LIST_SHOULD_BE + " 5,6,43,9 --->"
 				+ singlyLinedList.head.value + COMMA + singlyLinedList.head.next.value + COMMA
 				+ singlyLinedList.head.next.next.value + COMMA + singlyLinedList.head.next.next.next.value);
 
-		singlyLinedList.insertInLinkedList(4, 4);
-		singlyLinedList.insertInLinkedList(5, 5);
-		singlyLinedList.insertInLinkedList(6, 6);
-		singlyLinedList.insertInLinkedList(7, 7);
+		singlyLinedList.insert(4, 4);
+		singlyLinedList.insert(5, 5);
+		singlyLinedList.insert(6, 6);
+		singlyLinedList.insert(7, 7);
 		System.out.println(TRAVERSING_THROUGH_THE_CURRENT_STATE_OF_THE_SINGLY_LINKED_LIST);
-		singlyLinedList.traverseSinglyLinkedList();
+		singlyLinedList.traverse();
 
-		singlyLinedList.searchNode(43);
-		singlyLinedList.searchNode(99);
+		singlyLinedList.search(43);
+		singlyLinedList.search(99);
 
 		System.out.println(TRAVERSING_THROUGH_THE_CURRENT_STATE_OF_THE_SINGLY_LINKED_LIST);
-		singlyLinedList.traverseSinglyLinkedList();
-		singlyLinedList.deleteNode(6);
-		singlyLinedList.traverseSinglyLinkedList();
-		singlyLinedList.deleteNode(0);
-		singlyLinedList.traverseSinglyLinkedList();
-		singlyLinedList.deleteNode(50);
-		singlyLinedList.traverseSinglyLinkedList();
+		singlyLinedList.traverse();
+		singlyLinedList.delete(6);
+		singlyLinedList.traverse();
+		singlyLinedList.delete(0);
+		singlyLinedList.traverse();
+		singlyLinedList.delete(50);
+		singlyLinedList.traverse();
 
 		singlyLinedList.deleteSinglyLinkedList();
-		singlyLinedList.traverseSinglyLinkedList();
+		singlyLinedList.traverse();
 
 		System.out.println();
 		System.out.println();
@@ -59,7 +59,7 @@ public class Execute {
 
 		CircularSinglyLinkedList circularSinglyLinkedList = new CircularSinglyLinkedList();
 		final int firstNodeValueForCircularSinglyLinkedList = 5;
-		circularSinglyLinkedList.CreateCircularSinglyLinkedList(firstNodeValueForCircularSinglyLinkedList);
+		circularSinglyLinkedList.create(firstNodeValueForCircularSinglyLinkedList);
 		System.out.println("The first node value inserted in circular singly linked list is: "
 				+ firstNodeValueForCircularSinglyLinkedList);
 		System.out.println("First node value fetched from Circular Singly Linked List is---> "
@@ -68,21 +68,21 @@ public class Execute {
 				"Since the current size is only 1, hence the next node value of circular singly linked list is also--->"
 						+ circularSinglyLinkedList.head.next.value);
 
-		circularSinglyLinkedList.insertIntoCircularSinglyLinkedList(4, 0);
-		circularSinglyLinkedList.insertIntoCircularSinglyLinkedList(6, 1);
-		circularSinglyLinkedList.insertIntoCircularSinglyLinkedList(7, 8);
+		circularSinglyLinkedList.insert(4, 0);
+		circularSinglyLinkedList.insert(6, 1);
+		circularSinglyLinkedList.insert(7, 8);
 		System.out.println(circularSinglyLinkedList.head.value);
-		circularSinglyLinkedList.traverseCircularSinglyLinkedList();
-		circularSinglyLinkedList.searchnode(5);
-		circularSinglyLinkedList.searchnode(500);
-		circularSinglyLinkedList.searchnode(7);
-		circularSinglyLinkedList.deleteNode(2);
-		circularSinglyLinkedList.traverseCircularSinglyLinkedList();
+		circularSinglyLinkedList.traverse();
+		circularSinglyLinkedList.search(5);
+		circularSinglyLinkedList.search(500);
+		circularSinglyLinkedList.search(7);
+		circularSinglyLinkedList.delete(2);
+		circularSinglyLinkedList.traverse();
 		circularSinglyLinkedList.deleteCircularSinglyLinkedlIst();
-		circularSinglyLinkedList.traverseCircularSinglyLinkedList();
+		circularSinglyLinkedList.traverse();
 
 		DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
-		final DoublyNode initialDoublyLinkedList = doublyLinkedList.createDoublylinkedList(1);
+		final DoublyNode initialDoublyLinkedList = doublyLinkedList.create(1);
 		System.out.println(
 				"The current value after initialization of doubly linked list is: " + initialDoublyLinkedList.value);
 

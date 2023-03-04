@@ -7,7 +7,7 @@ public class CircularSinglyLinkedList {
 	public Node tail;
 	public int size;
 
-	public Node CreateCircularSinglyLinkedList(int nodeValue) {
+	public Node create(int nodeValue) {
 		head = new Node();
 		Node node = new Node();
 		node.value = nodeValue;
@@ -19,13 +19,13 @@ public class CircularSinglyLinkedList {
 		return head;
 	}
 
-	public void insertIntoCircularSinglyLinkedList(int nodeValue, int location) {
+	public void insert(int nodeValue, int location) {
 		Node node = new Node();
 		node.value = nodeValue;
 		// Check if the circular singly linked list exists or not
 		if (head == null) {
 			// If it doles not exist, create it.
-			CreateCircularSinglyLinkedList(nodeValue);
+			create(nodeValue);
 			return;
 		} else if (location == 0) {
 			// inserting the node at the beginning of the list.
@@ -51,7 +51,7 @@ public class CircularSinglyLinkedList {
 	}
 
 	// Traversal method
-	public void traverseCircularSinglyLinkedList() {
+	public void traverse() {
 		if (head != null) {
 			Node tempNode = head;
 			for (int index = 0; index < size; index++) {
@@ -68,7 +68,7 @@ public class CircularSinglyLinkedList {
 	}
 
 	// Searching
-	public boolean searchnode(int nodeValue) {
+	public boolean search(int nodeValue) {
 		if (head != null) {
 			Node tempNode = head;
 			for (int index = 0; index < size; index++) {
@@ -87,7 +87,7 @@ public class CircularSinglyLinkedList {
 	}
 
 	// Deleting a node
-	public void deleteNode(int location) {
+	public void delete(int location) {
 		if (head == null) {
 			System.out.println("The circular linked list does not exist.");
 			return;

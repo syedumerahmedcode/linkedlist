@@ -7,7 +7,7 @@ public class SinglyLinedList {
 	public Node tail;
 	public int size;
 
-	public Node createSinglyLinkedList(int nodeValue) {
+	public Node create(int nodeValue) {
 		head = new Node();
 		Node node = new Node();
 		node.next = null;
@@ -19,12 +19,12 @@ public class SinglyLinedList {
 	}
 
 	// Insert method for SinglyLinkedList
-	public void insertInLinkedList(int nodeValue, int location) {
+	public void insert(int nodeValue, int location) {
 		Node node = new Node();
 		node.value = nodeValue;
 		if (head == null) {
 			// This means that the linked list does not exists yet.
-			createSinglyLinkedList(nodeValue);
+			create(nodeValue);
 			return;
 		} else if (location == 0) {
 			node.next = head;
@@ -57,7 +57,7 @@ public class SinglyLinedList {
 	}
 
 	// Traversal of singly linked list
-	public void traverseSinglyLinkedList() {
+	public void traverse() {
 		if (head == null) {
 			System.out.println("Singly linked list does not exist.");
 		} else {
@@ -74,7 +74,7 @@ public class SinglyLinedList {
 	}
 
 	// Search for a node
-	public boolean searchNode(int nodeValue) {
+	public boolean search(int nodeValue) {
 		if (head != null) {
 			Node tempNode = head;
 			for (int i = 0; i < size; i++) {
@@ -90,7 +90,7 @@ public class SinglyLinedList {
 	}
 
 	// Deleting a node from a singly linked list
-	public void deleteNode(int location) {
+	public void delete(int location) {
 		if (head == null) {
 			// Since head points to null, this means that there is no linked list present.
 			System.out.println("The singyl linked list does not exist.");
