@@ -26,13 +26,13 @@
 
 - TODO: Add a diagram representing linked list in memory.
 
-# Creation of a singly linked list
+# Creation - singly linked list
 
 The creation of a singly linked list follows the following pseudo code:
 
 - TODO: Add a diagram representing creation of singly linked list.
 
-# Insertion to Linked List in memory
+# Insertion - Linked List in memory
 
 The following three variations are  possible for insertion in a singly linked list:
 
@@ -43,17 +43,17 @@ The following three variations are  possible for insertion in a singly linked li
 - TODO: Create 3 diagrams showing step-by-step of insertion of Singly Linked List in memory. (89)
 
 
-# Traversal of a singly linked list
+# Traversal - singly linked list
 
 - TODO: Add a diagram depicting the traversal in a singly linked list. (91)
 Time complexity: O(n)
 
-# Search in a singly linked list
+# Searching - singly linked list
 
 - TODO: Add a diagram depicting the searching a value in a singly linked list. (92)
 Time complexity: O(n)
 
-# Singly linked list deletion of a node
+# Deletion - Singly linked list
 
 - TODO: Add a diagram depicting the deletion in a singly linked list. (93)
 Time complexity: O(n)
@@ -77,17 +77,17 @@ Time complexity: O(1)
 -  Diagram with changes (1x) (100).
 - Time complexity of insertion of a node: O(n).
 
-# Traversal of a circular singly linked list
+# Traversal - circular singly linked list
 
 - TODO: Add a diagram depicting the traversal in a circular singly linked list. (102)
 Time complexity: O(n) 
 
-# Search in a circular singly linked list
+# Searching - circular singly linked list
 
 - TODO: Add a diagram depicting the searching a value in a singly linked list. (103)
 Time complexity: O(n)
 
-# Deletion from a circular singly linked list
+# Deletion - circular singly linked list
 
 - TODO: Add a diagram depicting the searching a value in a singly linked list. (104+105)
 Time complexity: O(n)
@@ -102,7 +102,9 @@ Time complexity: O(1)
 - TODO: Add a diagram depicting the deletion in a singly linked list. (110)
 - Time complexity of creation with one node: O(1).
 
- 
+## Insertion - Doubly linked list
+- TODO: Add a diagram depicting the deletion in a singly linked list. (112)
+- Time complexity of creation with one node: O(1). 
 
 
 
