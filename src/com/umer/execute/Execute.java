@@ -1,6 +1,8 @@
 package com.umer.execute;
 
 import com.umer.circularsinglylinkedlist.CircularSinglyLinkedList;
+import com.umer.common.DoublyNode;
+import com.umer.doublylinkedlist.DoublyLinkedList;
 import com.umer.singlylinkedlist.SinglyLinedList;
 
 public class Execute {
@@ -78,6 +80,11 @@ public class Execute {
 		circularSinglyLinkedList.traverseCircularSinglyLinkedList();
 		circularSinglyLinkedList.deleteCircularSinglyLinkedlIst();
 		circularSinglyLinkedList.traverseCircularSinglyLinkedList();
+
+		DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
+		final DoublyNode initialDoublyLinkedList = doublyLinkedList.createDoublylinkedList(1);
+		System.out.println(
+				"The current value after initialization of doubly linked list is: " + initialDoublyLinkedList.value);
 
 	}
 
