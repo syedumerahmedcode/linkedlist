@@ -4,7 +4,8 @@
 
 - [Introduction](#introduction)
 - [Out Of Scope](#out-of-scope)
-- [Arrays vs linked list](#arrays-vs-linked list)
+- [Arrays vs linked list](#arrays-vs-linked-list)
+- [Arrays](#arrays)
 - [Project structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
