@@ -6,6 +6,7 @@
 - [Out Of Scope](#out-of-scope)
 - [Arrays vs linked list](#arrays-vs-linked-list)
 - [Arrays](#arrays)
+- [Linked list](#linked-list)
 - [Project structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
@@ -32,7 +33,7 @@ Since this is an beginner project in which the focus is just to learn the basics
 - The size of an array is always predefined.
 - Random access - accessing an elements in the case of an array is very efficient. That means that we can access the element based on the index in the array. O(n) = 1.
 
-# Linked list
+### Linked list
 - Elements of linked list are independent objects. This means that we can remove an object from the middle of a linked list 
 - Variable size - the size of a linked list is not pre-defined. This allows us dynamic resizing at runtime.
 - Random access - accessing an elements in the case of a linked list is NOT efficient as we have to traverse through all elements till we reach the desired elements. O(n) = n
