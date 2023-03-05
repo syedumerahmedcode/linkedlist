@@ -26,7 +26,8 @@ Since this is an beginner project in which the focus is just to learn the basics
 
 ## Arrays vs linked list
 
-# Arrays
+### Arrays
+
 - Elements in arrays are NOT independent objects. 
 - The size of an array is always predefined.
 - Random access - accessing an elements in the case of an array is very efficient. That means that we can access the element based on the index in the array. O(n) = 1.
