@@ -7,6 +7,7 @@
 - [Arrays vs linked list](#arrays-vs-linked-list)
 - [Arrays](#arrays)
 - [Linked list](#linked-list)
+- [Types of linked list](#types-of-linked-list)
 - [Project structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
@@ -15,31 +16,31 @@
 - [References](#references)
 - [Contact Information](#contact-information)
 
-## Introduction
+# Introduction
 
 - Linked list is a form of sequential collection and it does not have to be in order. A linked list is made up of independent nodes that may contain any type of data and it has a reference to the next node in the link. 
 
 - The first node is called HEAD and the last node is called the TAIL of the linked list.
 
-## Out Of Scope
+# Out Of Scope
 
 Since this is an beginner project in which the focus is just to learn the basics of various aspects of linked list as well as some basic usages of linked list, testing is out of scope of this project.
 
-## Arrays vs linked list
+# Arrays vs linked list
 
-### Arrays
+## Arrays
 
 - Elements in arrays are NOT independent objects. 
 - The size of an array is always predefined.
 - Random access - accessing an elements in the case of an array is very efficient. That means that we can access the element based on the index in the array. O(n) = 1.
 
-### Linked list
+## Linked list
 - Elements of linked list are independent objects. This means that we can remove an object from the middle of a linked list 
 - Variable size - the size of a linked list is not pre-defined. This allows us dynamic resizing at runtime.
 - Random access - accessing an elements in the case of a linked list is NOT efficient as we have to traverse through all elements till we reach the desired elements. O(n) = n
 
 
-## Types of linked list
+# Types of linked list
 
 - Singly linked list(Example: any trivial application of a lined list)
 - Circular singly linked list(Example: a chess game in that how the turns switches among players)
