@@ -9,6 +9,13 @@
 - [Linked list](#linked-list)
 - [Types of linked list](#types-of-linked-list)
 - [Linked list in memory](#linked-list-in-memory)
+- [Singly linked list](#singly-linked-list)
+- [Creation - singly linked list](#creation-singly-linked-list)
+- [Traversal - singly linked list](#traversal-singly-linked-list)
+- [Searching - singly linked list](#searching-singly-linked-list)
+- [Deletion - Singly linked list](#deletion-singly-linked-list)
+- [Deleting entire singly linked list](#deleting-entire-singly-linked-list)
+- [Time and space complexity - singly linked list](#time-and-space-complexity-singly-linked-list)
 - [Project structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
@@ -41,24 +48,26 @@ Since this is an beginner project in which the focus is just to learn the basics
 - Random access - accessing an elements in the case of a linked list is NOT efficient as we have to traverse through all elements till we reach the desired elements. O(n) = n
 
 
-# Types of linked list
+## Types of linked list
 
 - Singly linked list(Example: any trivial application of a lined list)
 - Circular singly linked list(Example: a chess game in that how the turns switches among players)
 - Doubly linked list(Example: a music play list)
 - Circular doubly linked list(Example: ctrl+tab/ctrl+shift+tab function in Linux OS)
 
-# Linked list in memory
+## Linked list in memory
 
 - TODO: Add a diagram representing linked list in memory.
 
-# Creation - singly linked list
+# Singly linked list
+
+## Creation - singly linked list
 
 The creation of a singly linked list follows the following pseudo code:
 
 - TODO: Add a diagram representing creation of singly linked list.
 
-# Insertion - Linked List in memory
+## Insertion - Linked List in memory
 
 The following three variations are  possible for insertion in a singly linked list:
 
@@ -69,26 +78,26 @@ The following three variations are  possible for insertion in a singly linked li
 - TODO: Create 3 diagrams showing step-by-step of insertion of Singly Linked List in memory. (89)
 
 
-# Traversal - singly linked list
+## Traversal - singly linked list
 
 - TODO: Add a diagram depicting the traversal in a singly linked list. (91)
 Time complexity: O(n)
 
-# Searching - singly linked list
+## Searching - singly linked list
 
 - TODO: Add a diagram depicting the searching a value in a singly linked list. (92)
 Time complexity: O(n)
 
-# Deletion - Singly linked list
+## Deletion - Singly linked list
 
 - TODO: Add a diagram depicting the deletion in a singly linked list. (93)
 Time complexity: O(n)
 
-# Deleting entire singly linked list
+## Deleting entire singly linked list
 - TODO: Add a diagram depicting the deletion in a singly linked list. (95)
 Time complexity: O(1)
 
-# Time and space complexity of the singly linked list
+## Time and space complexity - singly linked list
 - TODO: Add a diagram depicting the deletion in a singly linked list. (96)
 
 
