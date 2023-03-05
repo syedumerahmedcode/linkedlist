@@ -8,6 +8,7 @@
 - [Arrays](#arrays)
 - [Linked list](#linked-list)
 - [Types of linked list](#types-of-linked-list)
+- [Linked list in memory](#linked-list-in-memory)
 - [Project structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
