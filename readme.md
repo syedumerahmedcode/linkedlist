@@ -16,6 +16,14 @@
 - [Deletion - Singly linked list](#deletion-singly-linked-list)
 - [Deleting entire singly linked list](#deleting-entire-singly-linked-list)
 - [Time and space complexity - singly linked list](#time-and-space-complexity-singly-linked-list)
+- [Circular singly linked list](#circular-singly-linked-list)
+- (Creation - Circular singly linked list)(#creation-circular-singly-linked-list)
+- (Insertion - Circular singly linked list)(#insertion-circular-singly-linked-list)
+- (Traversal - circular singly linked list)(#traversal-circular-singly-linked-list)
+- (Searching - circular singly linked list)(#searching-circular-singly-linked-list)
+- (Deletion - circular singly linked list)(#deletion-circular-singly-linked-list)
+- (Deleting entire circular singly linked list)(#deleting-entire-circular-singly-linked-list)
+- (Time and space complexity - circular singly linked list)(#time-and-space-complexity-circular-singly-linked-list)
 - [Project structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
@@ -101,39 +109,39 @@ Time complexity: O(1)
 - TODO: Add a diagram depicting the deletion in a singly linked list. (96)
 
 
-## Circular singly linked list
+# Circular singly linked list
 - TODO: Add a diagram depicting the deletion in a singly linked list. (98) x2
 - Time complexity of creation with one node: O(1).
 
-# Creation - Circular singly linked list
+## Creation - Circular singly linked list
 -  Diagram with changes (3x) (99).
 
-# Insertion - Circular singly linked list
+## Insertion - Circular singly linked list
 -  Diagram with changes (1x) (100).
 - Time complexity of insertion of a node: O(n).
 
-# Traversal - circular singly linked list
+## Traversal - circular singly linked list
 
 - TODO: Add a diagram depicting the traversal in a circular singly linked list. (102)
 Time complexity: O(n) 
 
-# Searching - circular singly linked list
+## Searching - circular singly linked list
 
 - TODO: Add a diagram depicting the searching a value in a singly linked list. (103)
 Time complexity: O(n)
 
-# Deletion - circular singly linked list
+## Deletion - circular singly linked list
 
 - TODO: Add a diagram depicting the searching a value in a singly linked list. (104+105)
 Time complexity: O(n)
 
-# Deleting entire circular singly linked list
+## Deleting entire circular singly linked list
 Time complexity: O(1)
 
-# Time and space complexity of the circular singly linked list
+## Time and space complexity - circular singly linked list
 - TODO: Add a diagram depicting the deletion in a singly linked list. (108)
 
-## Doubly linked list
+# Doubly linked list
 - TODO: Add a diagram depicting the deletion in a singly linked list. (110)
 - Time complexity of creation with one node: O(1).
 
