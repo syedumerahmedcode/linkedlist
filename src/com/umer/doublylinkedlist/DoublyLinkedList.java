@@ -18,4 +18,12 @@ public class DoublyLinkedList {
 		size = 1;
 		return head;
 	}
+
+	// Insertion
+	public void insert(int nodeValue, int location) {
+		DoublyNode newNode = new DoublyNode();
+		newNode.value = nodeValue;
+//		if(hed)
+
+	}
 }

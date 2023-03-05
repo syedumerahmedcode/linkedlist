@@ -1,6 +1,28 @@
+# Linked list
+
+## Table of content
+
+- [Introduction](#introduction)
+- [Out Of Scope](#out-of-scope)
+- [Average Temperature Calculation](#average-temperature-calculation)
+
+- [Project structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Prerequisities](#prerequisities)
+- [Commands](#commands)
+- [Contribution](#contribution)
+- [References](#references)
+- [Contact Information](#contact-information)
+
+## Introduction
+
 - Linked list is a form of sequential collection and it does not have to be in order. A linked list is made up of independent nodes that may contain any type of data and it has a reference to the next node in the link. 
 
 - The first node is called HEAD and the last node is called the TAIL of the linked list.
+
+## Out Of Scope
+
+Since this is an beginner project in which the focus is just to learn the basics of various aspects of linked list as well as some basic usages of linked list, testing is out of scope of this project.
 
 ## Arrays vs linked list
 
@@ -106,6 +128,32 @@ Time complexity: O(1)
 - TODO: Add a diagram depicting the deletion in a singly linked list. (112)
 - Time complexity of creation with one node: O(1). 
 
+## Project structure
+
+There are several packages, one for each problem, which contain the solution inside a _Service_ class. These service classes are instantiated and called from _main()_ inside the Execute class which can be found inside _com.umer.main_ package.
+
+## Technologies Used
+
+- Java 11.
 
 
+## Commands
+
+In order to run the program, one needs to open the project in a suitable IDE(such as Eclipse, STS, VSCode 0or IntelliJ), navigate to the Execute class inside com.umer.main package. Once there, right click---> Run As ---> Java Application.
+
+The program is written in such a way that most of the service currently uses hard-coded values and it does not take any input from the user. However, one can go inside the main() inside Execute class and change the input parameters as one sees fit.
+
+## Contribution
+
+Feature requests, issues, pull requests and questions are welcome.
+
+
+## References
+
+- [1](https://bechtle.udemy.com/course/java-data-structures-and-algorithms-masterclass/learn/): Data Structures and Algorithms from Zero to Hero and Crack Top Companies 100+ Interview questions (Java Coding) **(Udemy)** **(Primary resource)**
+- [2](https://www.happycoders.eu/): Happy Coders
+
+## Contact Information
+
+How to reach me? At [github specific gmail account](mailto:syedumerahmedcode@gmail.com?subject=%5BGitHub%5D%20Hello%20from%20Github). Additionally, you can reach me via [Linkedin](https://www.linkedin.com/in/syed-umer-ahmed-a346a746/) or at [Xing](https://www.xing.com/profile/SyedUmer_Ahmed/cv).
   
