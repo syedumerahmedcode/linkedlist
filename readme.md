@@ -4,8 +4,7 @@
 
 - [Introduction](#introduction)
 - [Out Of Scope](#out-of-scope)
-- [Average Temperature Calculation](#average-temperature-calculation)
-
+- [Arrays vs linked list](#arrays-vs-linked list)
 - [Project structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
