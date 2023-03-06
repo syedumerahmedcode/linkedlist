@@ -85,6 +85,10 @@ public class Execute {
 		final DoublyNode initialDoublyLinkedList = doublyLinkedList.create(1);
 		System.out.println(
 				"The current value after initialization of doubly linked list is: " + initialDoublyLinkedList.value);
+		doublyLinkedList.insert(2, 0);
+		doublyLinkedList.insert(3, 1);
+		doublyLinkedList.insert(3, 7);
+		
 
 	}
 
