@@ -151,7 +151,11 @@ Time complexity: O(1)
 
 ## Traversal - Doubly linked list
 - TODO: Add a diagram depicting the deletion in a singly linked list. (114)
-- Time complexity of creation with one node: O(n).  
+- Time complexity of creation with one node: O(n).
+
+### Reverse Traversal - Doubly linked list  
+- TODO: Add a diagram depicting the deletion in a singly linked list. (115)
+- Time complexity of creation with one node: O(n).
 
 ## Project structure
 

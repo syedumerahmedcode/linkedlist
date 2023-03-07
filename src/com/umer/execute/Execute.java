@@ -88,7 +88,10 @@ public class Execute {
 		doublyLinkedList.insert(2, 0);
 		doublyLinkedList.insert(3, 1);
 		doublyLinkedList.insert(4, 7);
+		System.out.println("Travesing through the doubly linked list in forward direction");
 		doublyLinkedList.traverse();
+		System.out.println("Travesing through the doubly linked list in backward direction");
+		doublyLinkedList.reverseTraversal();
 
 	}
 

@@ -65,5 +65,23 @@ public class DoublyLinkedList {
 		} else {
 			System.out.println("The Doubly linked list does not exist.");
 		}
+		System.out.println();
+	}
+	
+	// reverse traversal
+	public void reverseTraversal() {
+		if(head!=null) {
+			DoublyNode tempnode=tail;
+			for (int index = 0; index < size; index++) {
+				System.out.print(tempnode.value);
+				if(index!=size-1) {
+					System.out.print("-->");
+				}
+				tempnode=tempnode.prev;
+			}
+		}else {
+			System.out.println("The Doubly linked list does not exist.");
+		}
+		System.out.println();
 	}
 }
