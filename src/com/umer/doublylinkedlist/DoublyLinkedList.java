@@ -49,6 +49,21 @@ public class DoublyLinkedList {
 			newNode.next.prev = newNode;
 		}
 		size++;
+	}
 
+	// traversal
+	public void traverse() {
+		if (head != null) {
+			DoublyNode tempNode = head;
+			for (int index = 0; index < size; index++) {
+				System.out.print(tempNode.value);
+				if (index != size - 1) {
+					System.out.print("-->");
+				}
+				tempNode = tempNode.next;
+			}
+		} else {
+			System.out.println("The Doubly linked list does not exist.");
+		}
 	}
 }

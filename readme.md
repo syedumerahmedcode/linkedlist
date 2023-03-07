@@ -147,7 +147,11 @@ Time complexity: O(1)
 
 ## Insertion - Doubly linked list
 - TODO: Add a diagram depicting the deletion in a singly linked list. (112)
-- Time complexity of creation with one node: O(1). 
+- Time complexity of creation with one node: O(1).
+
+## Traversal - Doubly linked list
+- TODO: Add a diagram depicting the deletion in a singly linked list. (114)
+- Time complexity of creation with one node: O(n).  
 
 ## Project structure
 

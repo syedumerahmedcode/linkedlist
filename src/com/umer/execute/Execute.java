@@ -87,8 +87,8 @@ public class Execute {
 				"The current value after initialization of doubly linked list is: " + initialDoublyLinkedList.value);
 		doublyLinkedList.insert(2, 0);
 		doublyLinkedList.insert(3, 1);
-		doublyLinkedList.insert(3, 7);
-		
+		doublyLinkedList.insert(4, 7);
+		doublyLinkedList.traverse();
 
 	}
 
