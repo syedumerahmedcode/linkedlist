@@ -91,13 +91,13 @@ public class DoublyLinkedList {
 			DoublyNode tempNode=head;
 			for(int i=0;i<size;i++) {
 				if(tempNode.value==nodeValue) {
-					System.out.println("The node is found at location: "+i);
+					System.out.println("The node value "+nodeValue+" is found at location: "+i);
 					return true;
 				}
 				tempNode=tempNode.next;
 			}
 		}
-		System.out.println("Node not found!");
+		System.out.println("The node value "+nodeValue+" is not found in doubly linked list.");
 		return false;
 	}
 }

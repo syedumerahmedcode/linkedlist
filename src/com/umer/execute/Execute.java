@@ -92,6 +92,11 @@ public class Execute {
 		doublyLinkedList.traverse();
 		System.out.println("Travesing through the doubly linked list in backward direction");
 		doublyLinkedList.reverseTraversal();
+		int valueToSearchForInDoublyLinkedlist=4;
+		doublyLinkedList.searchNode(valueToSearchForInDoublyLinkedlist);
+		
+		valueToSearchForInDoublyLinkedlist=100;
+		doublyLinkedList.searchNode(valueToSearchForInDoublyLinkedlist);
 
 	}
 

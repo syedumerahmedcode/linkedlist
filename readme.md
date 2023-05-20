@@ -159,7 +159,7 @@ Time complexity: O(1)
 
 ### Searching - Doubly linked list  
 - TODO: Add a diagram depicting the searching algorithm in a doubly linked list. (106)
-- Time complexity of creation with one node: O(?).
+- Time complexity of creation with one node: O(n).
 
 ## Project structure
 
