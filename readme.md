@@ -142,20 +142,24 @@ Time complexity: O(1)
 - TODO: Add a diagram depicting the deletion in a singly linked list. (108)
 
 # Doubly linked list
-- TODO: Add a diagram depicting the deletion in a singly linked list. (110)
+- TODO: Add a diagram depicting the deletion in a doubly linked list. (110)---> Please double check the video number. 
 - Time complexity of creation with one node: O(1).
 
 ## Insertion - Doubly linked list
-- TODO: Add a diagram depicting the deletion in a singly linked list. (112)
+- TODO: Add a diagram depicting the deletion in a doubly linked list. (112)---> Please double check the video number.
 - Time complexity of creation with one node: O(1).
 
 ## Traversal - Doubly linked list
-- TODO: Add a diagram depicting the deletion in a singly linked list. (114)
+- TODO: Add a diagram depicting the deletion in a doubly linked list. (104)---> Please double check the video number.
 - Time complexity of creation with one node: O(n).
 
 ### Reverse Traversal - Doubly linked list  
-- TODO: Add a diagram depicting the deletion in a singly linked list. (115)
+- TODO: Add a diagram depicting the deletion in a doubly linked list. (105)---> Please double check the video number.
 - Time complexity of creation with one node: O(n).
+
+### Searching - Doubly linked list  
+- TODO: Add a diagram depicting the searching algorithm in a doubly linked list. (106)
+- Time complexity of creation with one node: O(?).
 
 ## Project structure
 
