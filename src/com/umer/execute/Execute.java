@@ -93,10 +93,27 @@ public class Execute {
 		System.out.println("Travesing through the doubly linked list in backward direction");
 		doublyLinkedList.reverseTraversal();
 		int valueToSearchForInDoublyLinkedlist=4;
+		System.out.println("Searching for a node value that exists in the doubly linked list");
 		doublyLinkedList.searchNode(valueToSearchForInDoublyLinkedlist);
 		
 		valueToSearchForInDoublyLinkedlist=100;
+		System.out.println("Searching for a node value that does not exist in the doubly linked list");
 		doublyLinkedList.searchNode(valueToSearchForInDoublyLinkedlist);
+		
+		System.out.println("Travesing through the doubly linked list in forward direction");
+		doublyLinkedList.traverse();
+		int locationToDeleteAtInDoublyLinkedList=1;
+		doublyLinkedList.deleteNodeDoublyLinkedList(locationToDeleteAtInDoublyLinkedList);
+		System.out.println("Travesing through the doubly linked list in forward direction");
+		doublyLinkedList.traverse();
+		
+		locationToDeleteAtInDoublyLinkedList=100;
+		doublyLinkedList.deleteNodeDoublyLinkedList(locationToDeleteAtInDoublyLinkedList);
+		System.out.println("Travesing through the doubly linked list in forward direction");
+		doublyLinkedList.traverse();
+		
+		doublyLinkedList.deleteDoubleLinkedList();
+		doublyLinkedList.traverse();
 
 	}
 

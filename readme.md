@@ -155,15 +155,23 @@ Time complexity: O(1)
 
 ### Reverse Traversal - Doubly linked list  
 - TODO: Add a diagram depicting the deletion in a doubly linked list. (105)---> Please double check the video number.
-- Time complexity of creation with one node: O(n).
+- Time complexity of traversal with one node: O(n).
 
 ### Searching - Doubly linked list  
 - TODO: Add a diagram depicting the searching algorithm in a doubly linked list. (106)
-- Time complexity of creation with one node: O(n).
+- Time complexity of searching with one node: O(n).
 
 ### Deletion - Doubly linked list  
-- TODO: Add a diagram depicting the searching algorithm in a doubly linked list. (106)
-- Time complexity of creation with one node: O(n).
+- TODO: Add a diagram depicting the searching algorithm in a doubly linked list. (108)
+- Time complexity of deletion with one node: O(n).
+
+### Deletion - Entire Doubly linked list  
+- Time complexity of deletion with one node: O(n).
+
+### Time and space complexity - Doubly linked list
+ - Create a diagram describing time and space complexity for doubly linked list. (111)
+ 
+ 
 
 ## Project structure
 

@@ -1,5 +1,7 @@
 package com.umer.doublylinkedlist;
 
+import java.util.function.Predicate;
+
 import com.umer.common.DoublyNode;
 
 public class DoublyLinkedList {
@@ -67,37 +69,99 @@ public class DoublyLinkedList {
 		}
 		System.out.println();
 	}
-	
+
 	// reverse traversal
 	public void reverseTraversal() {
-		if(head!=null) {
-			DoublyNode tempnode=tail;
+		if (head != null) {
+			DoublyNode tempnode = tail;
 			for (int index = 0; index < size; index++) {
 				System.out.print(tempnode.value);
-				if(index!=size-1) {
+				if (index != size - 1) {
 					System.out.print("-->");
 				}
-				tempnode=tempnode.prev;
+				tempnode = tempnode.prev;
 			}
-		}else {
+		} else {
 			System.out.println("The Doubly linked list does not exist.");
 		}
 		System.out.println();
 	}
-	
-	//search node
+
+	// search node
 	public boolean searchNode(int nodeValue) {
-		if(head!=null) {
-			DoublyNode tempNode=head;
-			for(int i=0;i<size;i++) {
-				if(tempNode.value==nodeValue) {
-					System.out.println("The node value "+nodeValue+" is found at location: "+i);
+		if (head != null) {
+			DoublyNode tempNode = head;
+			for (int i = 0; i < size; i++) {
+				if (tempNode.value == nodeValue) {
+					System.out.println("The node value " + nodeValue + " is found at location: " + i);
 					return true;
 				}
-				tempNode=tempNode.next;
+				tempNode = tempNode.next;
 			}
 		}
-		System.out.println("The node value "+nodeValue+" is not found in doubly linked list.");
+		System.out.println("The node value " + nodeValue + " is not found in doubly linked list.");
 		return false;
 	}
+
+	// deletion method
+	public void deleteNodeDoublyLinkedList(int location) {
+		if (head == null) {
+			System.out.println("the double linked list does not exist.");
+			return;
+		} else if (location == 0) {
+			// delete from the head of the linked list
+			if (size == 1) {
+				// There is only one element in the double linked list.
+				head = null;
+				tail = null;
+				size--;
+				return;
+			} else {
+				// There are more than 1 element in the double linked list.
+				head = head.next;
+				head.prev = null;
+				size--;
+				return;
+			}
+		} else if (location >= size) {
+			// delete from the end of the double linked list.
+			DoublyNode tempNode = tail.prev;
+			if (size == 1) {
+				// There is only one element in the double linked list.
+				head = null;
+				tail = null;
+				size--;
+				return;
+			} else {
+				tempNode.next = null;
+				tail = tempNode;
+				size--;
+			}
+		} else {
+			// The location is neither the start of the double linked list nor the end of
+			// the double linked list i.e. its is somewhere in the middle of the double
+			// linked list
+			DoublyNode tempNode = head;
+			for (int i = 0; i < location - 1; i++) {
+				tempNode = tempNode.next;
+			}
+			tempNode.next = tempNode.next.next;
+			tempNode.next.prev = tempNode;
+			size--;
+		}
+	}
+
+	// delete entire double linked list
+	public void deleteDoubleLinkedList() {
+		DoublyNode tempNode = head;
+		for (int i = 0; i < size; i++) {
+			tempNode.prev = null;
+			tempNode.next = tempNode;
+		}
+		head = null;
+		tail = null;
+		size = 0;
+		System.out.println("The doubly linked list has been deleted.");
+	}
+
 }
