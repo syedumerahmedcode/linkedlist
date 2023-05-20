@@ -161,6 +161,10 @@ Time complexity: O(1)
 - TODO: Add a diagram depicting the searching algorithm in a doubly linked list. (106)
 - Time complexity of creation with one node: O(n).
 
+### Deletion - Doubly linked list  
+- TODO: Add a diagram depicting the searching algorithm in a doubly linked list. (106)
+- Time complexity of creation with one node: O(n).
+
 ## Project structure
 
 There are several packages, one for each problem, which contain the solution inside a _Service_ class. These service classes are instantiated and called from _main()_ inside the Execute class which can be found inside _com.umer.main_ package.
