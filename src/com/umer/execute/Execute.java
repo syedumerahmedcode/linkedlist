@@ -93,33 +93,33 @@ public class Execute {
 		doublyLinkedList.traverse();
 		System.out.println("Travesing through the doubly linked list in backward direction");
 		doublyLinkedList.reverseTraversal();
-		int valueToSearchForInDoublyLinkedlist=4;
+		int valueToSearchForInDoublyLinkedlist = 4;
 		System.out.println("Searching for a node value that exists in the doubly linked list");
 		doublyLinkedList.searchNode(valueToSearchForInDoublyLinkedlist);
-		
-		valueToSearchForInDoublyLinkedlist=100;
+
+		valueToSearchForInDoublyLinkedlist = 100;
 		System.out.println("Searching for a node value that does not exist in the doubly linked list");
 		doublyLinkedList.searchNode(valueToSearchForInDoublyLinkedlist);
-		
+
 		System.out.println("Travesing through the doubly linked list in forward direction");
 		doublyLinkedList.traverse();
-		int locationToDeleteAtInDoublyLinkedList=1;
+		int locationToDeleteAtInDoublyLinkedList = 1;
 		doublyLinkedList.deleteNodeDoublyLinkedList(locationToDeleteAtInDoublyLinkedList);
 		System.out.println("Travesing through the doubly linked list in forward direction");
 		doublyLinkedList.traverse();
-		
-		locationToDeleteAtInDoublyLinkedList=100;
+
+		locationToDeleteAtInDoublyLinkedList = 100;
 		doublyLinkedList.deleteNodeDoublyLinkedList(locationToDeleteAtInDoublyLinkedList);
 		System.out.println("Travesing through the doubly linked list in forward direction");
 		doublyLinkedList.traverse();
-		
+
 		doublyLinkedList.deleteDoubleLinkedList();
 		doublyLinkedList.traverse();
-		
+
 		System.out.println("Checking various operations of circular double linked list.");
-		CircularDoublyLinkedList circularDoublyLinkedList=new CircularDoublyLinkedList();
+		CircularDoublyLinkedList circularDoublyLinkedList = new CircularDoublyLinkedList();
 		circularDoublyLinkedList.createCircularDoublyLinkedList(1);
-		System.out.println("The value of head in circular double linked list: "+circularDoublyLinkedList.head.value);
+		System.out.println("The value of head in circular double linked list: " + circularDoublyLinkedList.head.value);
 
 	}
 

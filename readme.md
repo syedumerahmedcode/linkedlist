@@ -171,7 +171,11 @@ Time complexity: O(1)
 ### Time and space complexity - Doubly linked list
  - Create a diagram describing time and space complexity for doubly linked list. (111)
 
- 
+# Circular Doubly linked list
+- TODO: Add a diagram depicting the deletion in a doubly linked list. (113) 
+- Time complexity of creation with one node: O(1).
+
+
  
 
 ## Project structure
