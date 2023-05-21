@@ -1,5 +1,6 @@
 package com.umer.execute;
 
+import com.umer.circulardoublylinkedlist.CircularDoublyLinkedList;
 import com.umer.circularsinglylinkedlist.CircularSinglyLinkedList;
 import com.umer.common.DoublyNode;
 import com.umer.doublylinkedlist.DoublyLinkedList;
@@ -114,6 +115,11 @@ public class Execute {
 		
 		doublyLinkedList.deleteDoubleLinkedList();
 		doublyLinkedList.traverse();
+		
+		System.out.println("Checking various operations of circular double linked list.");
+		CircularDoublyLinkedList circularDoublyLinkedList=new CircularDoublyLinkedList();
+		circularDoublyLinkedList.createCircularDoublyLinkedList(1);
+		System.out.println("The value of head in circular double linked list: "+circularDoublyLinkedList.head.value);
 
 	}
 
