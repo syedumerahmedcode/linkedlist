@@ -111,10 +111,10 @@ Time complexity: O(1)
 
 # Circular singly linked list
 - TODO: Add a diagram depicting the deletion in a singly linked list. (98) x2
-- Time complexity of creation with one node: O(1).
 
 ## Creation - Circular singly linked list
 -  Diagram with changes (3x) (99).
+- Time complexity of creation with one node: O(1).
 
 ## Insertion - Circular singly linked list
 -  Diagram with changes (1x) (100).
@@ -153,25 +153,27 @@ Time complexity: O(1)
 - TODO: Add a diagram depicting the deletion in a doubly linked list. (104)---> Please double check the video number.
 - Time complexity of creation with one node: O(n).
 
-### Reverse Traversal - Doubly linked list  
+## Reverse Traversal - Doubly linked list  
 - TODO: Add a diagram depicting the deletion in a doubly linked list. (105)---> Please double check the video number.
 - Time complexity of traversal with one node: O(n).
 
-### Searching - Doubly linked list  
+## Searching - Doubly linked list  
 - TODO: Add a diagram depicting the searching algorithm in a doubly linked list. (106)
 - Time complexity of searching with one node: O(n).
 
-### Deletion - Doubly linked list  
+## Deletion - Doubly linked list  
 - TODO: Add a diagram depicting the searching algorithm in a doubly linked list. (108)
 - Time complexity of deletion with one node: O(n).
 
-### Deletion - Entire Doubly linked list  
+## Deletion - Entire Doubly linked list  
 - Time complexity of deletion with one node: O(n).
 
-### Time and space complexity - Doubly linked list
+## Time and space complexity - Doubly linked list
  - Create a diagram describing time and space complexity for doubly linked list. (111)
 
 # Circular Doubly linked list
+
+## Creation - Circular Doubly linked list
 - TODO: Add a diagram depicting the deletion in a doubly linked list. (113) 
 - Time complexity of creation with one node: O(1).
 
