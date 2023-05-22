@@ -10,10 +10,10 @@
 - [Types of linked list](#types-of-linked-list)
 - [Linked list in memory](#linked-list-in-memory)
 - [Singly linked list](#singly-linked-list)
-- [Creation - singly linked list](#creation-singly-linked-list)
-- [Traversal - singly linked list](#traversal-singly-linked-list)
-- [Searching - singly linked list](#searching-singly-linked-list)
-- [Deletion - Singly linked list](#deletion-singly-linked-list)
+- [Creation in singly linked list](#creation-in-singly-linked-list)
+- [Traversal in singly linked list](#traversal-in-singly-linked-list)
+- [Searching in singly linked list](#searching-in-singly-linked-list)
+- [Deletion in Singly linked list](#deletion-in-singly-linked-list)
 - [Deleting entire singly linked list](#deleting-entire-singly-linked-list)
 - [Time and space complexity - singly linked list](#time-and-space-complexity-singly-linked-list)
 - [Circular singly linked list](#circular-singly-linked-list)
@@ -79,13 +79,13 @@ Since this is an beginner project in which the focus is just to learn the basics
 
 # Singly linked list
 
-## Creation - singly linked list
+## Creation in singly linked list
 
 The creation of a singly linked list follows the following pseudo code:
 
 - TODO: Add a diagram representing creation of singly linked list.
 
-## Insertion - Linked List in memory
+## Insertion in Linked List in memory
 
 The following three variations are  possible for insertion in a singly linked list:
 
@@ -96,17 +96,17 @@ The following three variations are  possible for insertion in a singly linked li
 - TODO: Create 3 diagrams showing step-by-step of insertion of Singly Linked List in memory. (89)
 
 
-## Traversal - singly linked list
+## Traversal in singly linked list
 
 - TODO: Add a diagram depicting the traversal in a singly linked list. (91)
 Time complexity: O(n)
 
-## Searching - singly linked list
+## Searching in singly linked list
 
 - TODO: Add a diagram depicting the searching a value in a singly linked list. (92)
 Time complexity: O(n)
 
-## Deletion - Singly linked list
+## Deletion in Singly linked list
 
 - TODO: Add a diagram depicting the deletion in a singly linked list. (93)
 Time complexity: O(n)
