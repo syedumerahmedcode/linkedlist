@@ -15,7 +15,7 @@
 - [Searching in singly linked list](#searching-in-singly-linked-list)
 - [Deletion in Singly linked list](#deletion-in-singly-linked-list)
 - [Deleting entire singly linked list](#deleting-entire-singly-linked-list)
-- [Time and space complexity - singly linked list](#time-and-space-complexity-singly-linked-list)
+- [Time and space complexity in singly linked list](#time-and-space-complexity-in-singly-linked-list)
 - [Circular singly linked list](#circular-singly-linked-list)
 - [Creation - Circular singly linked list](#creation-circular-singly-linked-list)
 - [Insertion - Circular singly linked list](#insertion-circular-singly-linked-list)
@@ -115,7 +115,7 @@ Time complexity: O(n)
 - TODO: Add a diagram depicting the deletion in a singly linked list. (95)
 Time complexity: O(1)
 
-## Time and space complexity - singly linked list
+## Time and space complexity in singly linked list
 - TODO: Add a diagram depicting the deletion in a singly linked list. (96)
 
 
