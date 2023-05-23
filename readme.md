@@ -184,7 +184,11 @@ Time complexity: O(1)
 # Circular Doubly linked list
 
 ## Creation in Circular Doubly linked list
-- TODO: Add a diagram depicting the deletion in a doubly linked list. (113) 
+- TODO: Add a diagram depicting the creation of a circular doubly linked list. (113) 
+- Time complexity of creation with one node: O(1).
+
+## Insertion in Circular Doubly linked list
+- TODO: Add a diagram depicting the insertion algorithm for circular doubly linked list. (115) 
 - Time complexity of creation with one node: O(1).
 
 
