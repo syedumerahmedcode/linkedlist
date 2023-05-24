@@ -34,6 +34,7 @@
 - [Time and space complexity in doubly linked list](#time-and-space-complexity-in-doubly-linked-list)
 - [Circular doubly linked list](#circular-doubly-linked-list)
 - [Creation in circular doubly linked list](#creation-in-circular-doubly-linked-list)
+- [Insertion in circular doubly linked list](#insertion-in-circular-doubly-linked-list)
 - [Project structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
@@ -189,7 +190,7 @@ Time complexity: O(1)
 
 ## Insertion in Circular Doubly linked list
 - TODO: Add a diagram depicting the insertion algorithm for circular doubly linked list. (115) 
-- Time complexity of creation with one node: O(1).
+- Time complexity of creation with one node: O(n).
 
 
  
