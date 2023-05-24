@@ -120,6 +120,8 @@ public class Execute {
 		CircularDoublyLinkedList circularDoublyLinkedList = new CircularDoublyLinkedList();
 		circularDoublyLinkedList.createCircularDoublyLinkedList(1);
 		System.out.println("The value of head in circular double linked list: " + circularDoublyLinkedList.head.value);
+		
+		circularDoublyLinkedList.insertNode(2, 1);
 
 	}
 
