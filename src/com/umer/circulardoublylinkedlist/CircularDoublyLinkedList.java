@@ -56,4 +56,23 @@ public class CircularDoublyLinkedList {
 		}
 		size++;
 	}
+	
+	// traverse circular double linked list
+	public void traverse() {
+		if(head!=null) {
+			DoublyNode tempNode=head;
+			for (int i = 0; i < size; i++) {
+				System.out.print(tempNode.value);
+				if(i!=size-1) {
+					System.out.print("-->");
+				}
+				tempNode=tempNode.next;
+			}
+		}else {
+			System.out.println("The circular double linked list does not exist.");
+		}
+		System.out.println();
+	}
+	
+	
 }

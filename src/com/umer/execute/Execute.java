@@ -121,7 +121,10 @@ public class Execute {
 		circularDoublyLinkedList.createCircularDoublyLinkedList(1);
 		System.out.println("The value of head in circular double linked list: " + circularDoublyLinkedList.head.value);
 		
-		circularDoublyLinkedList.insertNode(2, 1);
+		circularDoublyLinkedList.insertNode(2, 0);
+		circularDoublyLinkedList.insertNode(3, 2);
+		circularDoublyLinkedList.insertNode(4, 5);
+		circularDoublyLinkedList.traverse();
 
 	}
 
