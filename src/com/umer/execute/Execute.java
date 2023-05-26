@@ -125,6 +125,7 @@ public class Execute {
 		circularDoublyLinkedList.insertNode(3, 2);
 		circularDoublyLinkedList.insertNode(4, 5);
 		circularDoublyLinkedList.traverse();
+		circularDoublyLinkedList.reverseTraversal();
 
 	}
 
