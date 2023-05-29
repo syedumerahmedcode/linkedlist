@@ -38,6 +38,7 @@
 - [Traversal in circular doubly linked list](#traversal-in-circular-doubly-linked-list)
 - [Reverse Traversal in circular doubly linked list](#reverse-traversal-in-circular-doubly-linked-list)
 - [Searching in circular doubly linked list](#searching-in-circular-doubly-linked-list)
+- [Deletion in circular doubly linked list](#deletion-in-circular-doubly-linked-list)
 - [Project structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
@@ -204,7 +205,11 @@ Time complexity: O(1)
 - Time complexity of creation with one node: O(n).
 
 ## Searching in Circular Doubly linked list
-- TODO: Add a diagram depicting the searching algorithm for circular doubly linked list. (118)
+- TODO: Add a diagram depicting the searching algorithm for circular doubly linked list. (119)
+- Time complexity of creation with one node: O(n).
+
+## Deletion in Circular Doubly linked list
+- TODO: Add a diagram depicting the deletion algorithm for circular doubly linked list. (121)
 - Time complexity of creation with one node: O(n).
 
  
