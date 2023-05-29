@@ -38,7 +38,7 @@ public class CircularDoublyLinkedList {
 			head = newNode;
 		} else if (location >= size) {
 			newNode.next = head;
-			newNode.next = tail;
+			newNode.prev = tail;
 			head.prev = newNode;
 			tail.next = newNode;
 			tail = newNode;
@@ -74,21 +74,21 @@ public class CircularDoublyLinkedList {
 		System.out.println();
 	}
 
-	// reverse traversal of circular double linked list
-	public void reverseTraversal() {
+	// Reverse Traversal
+	void reverseTraversalCDLL() {
 		if (head != null) {
 			DoublyNode tempNode = tail;
 			for (int i = 0; i < size; i++) {
 				System.out.print(tempNode.value);
 				if (i != size - 1) {
-					System.out.print("<--");
+					System.out.print(" <- ");
 				}
 				tempNode = tempNode.prev;
 			}
+
 		} else {
-			System.out.println("The circular double linked list does not exist.");
+			System.out.println("The CDLL does not exist!");
 		}
-		System.out.println();
 	}
 
 	// search for a node
@@ -98,62 +98,62 @@ public class CircularDoublyLinkedList {
 
 			for (int i = 0; i < size; i++) {
 				if (tempNode.value == nodeValue) {
-					System.out.println("The value provided: "+nodeValue+" is found at location: " + i);
+					System.out.println("The value provided: " + nodeValue + " is found at location: " + i);
 					return true;
 				}
 				tempNode = tempNode.next;
 			}
 		}
-		System.out.println("The value provided: "+nodeValue+" does not exist.");
+		System.out.println("The value provided: " + nodeValue + " does not exist.");
 		return false;
 	}
-	
+
 	// deletion method
 	public void deleteNode(int location) {
-		if(head==null) {
+		if (head == null) {
 			System.out.println("The cicular double linked list does not exist");
-			return;			
-		}
-		else if(location==0) {
+			return;
+		} else if (location == 0) {
 			// We are deleting a node at the start of the circular double linked list
-			if(size==1) {
+			if (size == 1) {
 				// The circular double linked list contains only one element
-				head.prev=null;
-				head.next=null;
-				head=tail=null;
+				head.prev = null;
+				head.next = null;
+				head = tail = null;
 				size--;
-				return;				
-			}else {
+				return;
+			} else {
 				// The circular double linked list contains more than one element
-				head= head.next;
-				head.prev=tail;
-				tail.next=head;
+				head = head.next;
+				head.prev = tail;
+				tail.next = head;
 				size--;
 			}
-		}else if(location>=size) {
+		} else if (location >= size) {
 			// We are deleting a node at the end of the circular double linked list
-			if(size==1) {
+			if (size == 1) {
 				// The circular double linked list contains only one element
-				head.prev=null;
-				head.next=null;
-				head=tail=null;
+				head.prev = null;
+				head.next = null;
+				head = tail = null;
 				size--;
-				return;				
-			}else {
+				return;
+			} else {
 				// The circular double linked list contains more than one element
-				tail=tail.prev;
-				tail.next=head;
-				head.prev=tail;
+				tail = tail.prev;
+				tail.next = head;
+				head.prev = tail;
 				size--;
 			}
-		}else {
-			// We are deleting a node at any given location of the circular double linked list
-			DoublyNode tempNode=head;
-			for(int i=0;i<location-1;i++) {
-				tempNode=tempNode.next;
+		} else {
+			// We are deleting a node at any given location of the circular double linked
+			// list
+			DoublyNode tempNode = head;
+			for (int i = 0; i < location - 1; i++) {
+				tempNode = tempNode.next;
 			}
-			tempNode.next=tempNode.next.next;
-			tempNode.next.prev=tempNode;
+			tempNode.next = tempNode.next.next;
+			tempNode.next.prev = tempNode;
 			size--;
 		}
 	}

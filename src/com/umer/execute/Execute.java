@@ -132,6 +132,10 @@ public class Execute {
 		
 		valueToSearchForInCircularDoublyLinkedList = 3000000;
 		circularDoublyLinkedList.searchNode(valueToSearchForInCircularDoublyLinkedList);
+		
+		circularDoublyLinkedList.traverse();
+		circularDoublyLinkedList.deleteNode(9);
+		circularDoublyLinkedList.traverse();
 
 	}
 
