@@ -120,12 +120,18 @@ public class Execute {
 		CircularDoublyLinkedList circularDoublyLinkedList = new CircularDoublyLinkedList();
 		circularDoublyLinkedList.createCircularDoublyLinkedList(1);
 		System.out.println("The value of head in circular double linked list: " + circularDoublyLinkedList.head.value);
-		
+
 		circularDoublyLinkedList.insertNode(2, 0);
 		circularDoublyLinkedList.insertNode(3, 2);
 		circularDoublyLinkedList.insertNode(4, 5);
 		circularDoublyLinkedList.traverse();
-		circularDoublyLinkedList.reverseTraversal();
+//		circularDoublyLinkedList.reverseTraversal();
+		System.out.println("Searching for a node value in the circular double linked list");
+		int valueToSearchForInCircularDoublyLinkedList = 3;
+		circularDoublyLinkedList.searchNode(valueToSearchForInCircularDoublyLinkedList);
+		
+		valueToSearchForInCircularDoublyLinkedList = 3000000;
+		circularDoublyLinkedList.searchNode(valueToSearchForInCircularDoublyLinkedList);
 
 	}
 

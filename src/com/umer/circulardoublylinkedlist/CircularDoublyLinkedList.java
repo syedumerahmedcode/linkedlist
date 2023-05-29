@@ -98,13 +98,13 @@ public class CircularDoublyLinkedList {
 
 			for (int i = 0; i < size; i++) {
 				if (tempNode.value == nodeValue) {
-					System.out.println("The node is found at location: " + i);
+					System.out.println("The value provided: "+nodeValue+" is found at location: " + i);
 					return true;
 				}
 				tempNode = tempNode.next;
 			}
 		}
-		System.out.println("The node does not exist.");
+		System.out.println("The value provided: "+nodeValue+" does not exist.");
 		return false;
 	}
 
