@@ -91,4 +91,21 @@ public class CircularDoublyLinkedList {
 		System.out.println();
 	}
 
+	// search for a node
+	public boolean searchNode(int nodeValue) {
+		if (head != null) {
+			DoublyNode tempNode = head;
+
+			for (int i = 0; i < size; i++) {
+				if (tempNode.value == nodeValue) {
+					System.out.println("The node is found at location: " + i);
+					return true;
+				}
+				tempNode = tempNode.next;
+			}
+		}
+		System.out.println("The node does not exist.");
+		return false;
+	}
+
 }
