@@ -129,12 +129,14 @@ public class Execute {
 		System.out.println("Searching for a node value in the circular double linked list");
 		int valueToSearchForInCircularDoublyLinkedList = 3;
 		circularDoublyLinkedList.searchNode(valueToSearchForInCircularDoublyLinkedList);
-		
+
 		valueToSearchForInCircularDoublyLinkedList = 3000000;
 		circularDoublyLinkedList.searchNode(valueToSearchForInCircularDoublyLinkedList);
-		
+
 		circularDoublyLinkedList.traverse();
 		circularDoublyLinkedList.deleteNode(9);
+		circularDoublyLinkedList.traverse();
+		circularDoublyLinkedList.deleteCircularDoubleLinkedList();
 		circularDoublyLinkedList.traverse();
 
 	}

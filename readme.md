@@ -214,7 +214,7 @@ Time complexity: O(1)
 - Time complexity of creation with one node: O(n).
 
 ## Deleting entire Circular Doubly linked list
-- Time complexity of creation with one node: O(n).
+- Time complexity of Deleting entire Circular Doubly linked list: O(n).
 
  
 
