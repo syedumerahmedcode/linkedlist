@@ -3,6 +3,9 @@ package com.umer.circularsinglylinkedlist;
 import com.umer.common.Node;
 
 public class CircularSinglyLinkedList {
+	private static final String THE_CIRCULAR_SINGLY_LINKED_LIST_IS_EMPTY = "The circular singly linked list is empty.";
+	private static final String THE_CIRCULAR_SINGLY_LINKED_LIST_HAS_BEEN_DELETED = "The circular singly linked list has been deleted.";
+	private static final String THE_CIRCULAR_SINGLY_LINKED_LIST_DOES_NOT_EXIST = "The circular singly linked list does not exist.";
 	public Node head;
 	public Node tail;
 	public int size;
@@ -63,7 +66,7 @@ public class CircularSinglyLinkedList {
 			}
 			System.out.println();
 		} else {
-			System.out.println("The circular linked list does not exist.");
+			System.out.println(THE_CIRCULAR_SINGLY_LINKED_LIST_DOES_NOT_EXIST);
 		}
 	}
 
@@ -81,7 +84,7 @@ public class CircularSinglyLinkedList {
 			System.out.println("Did not find the value " + nodeValue + " in the circular singly linked list.");
 			return false;
 		} else {
-			System.out.println("The list is empty.");
+			System.out.println(THE_CIRCULAR_SINGLY_LINKED_LIST_IS_EMPTY);
 			return false;
 		}
 	}
@@ -89,7 +92,7 @@ public class CircularSinglyLinkedList {
 	// Deleting a node
 	public void delete(int location) {
 		if (head == null) {
-			System.out.println("The circular linked list does not exist.");
+			System.out.println(THE_CIRCULAR_SINGLY_LINKED_LIST_DOES_NOT_EXIST);
 			return;
 		} else if (location == 0) {
 			// delete the element from the beginning of circular singly linked list
@@ -131,12 +134,12 @@ public class CircularSinglyLinkedList {
 	// Deleting the entire circular singly linked list
 	public void deleteCircularSinglyLinkedlIst() {
 		if (head == null) {
-			System.out.println("The circular singly linked list does not existg.");
+			System.out.println(THE_CIRCULAR_SINGLY_LINKED_LIST_DOES_NOT_EXIST);
 		} else {
 			head = null;
 			tail.next = null;
 			tail = null;
-			System.out.println("The circular singly linked list has been deleted.");
+			System.out.println(THE_CIRCULAR_SINGLY_LINKED_LIST_HAS_BEEN_DELETED);
 		}
 	}
 

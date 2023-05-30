@@ -3,6 +3,9 @@ package com.umer.circulardoublylinkedlist;
 import com.umer.common.DoublyNode;
 
 public class CircularDoublyLinkedList {
+
+	private static final String THE_CIRCULAR_DOUBLE_LINKED_LIST_DOES_NOT_EXIST = "The circular double linked list does not exist.";
+	private static final String THE_CIRCULAR_DOUBLE_LINKED_LIST_HAS_BEEN_DELETED = "The circular double linked list has been deleted.";
 	public DoublyNode head;
 	public DoublyNode tail;
 	public int size = 0;
@@ -69,7 +72,7 @@ public class CircularDoublyLinkedList {
 				tempNode = tempNode.next;
 			}
 		} else {
-			System.out.println("The circular double linked list does not exist.");
+			System.out.println(THE_CIRCULAR_DOUBLE_LINKED_LIST_DOES_NOT_EXIST);
 		}
 		System.out.println();
 	}
@@ -87,7 +90,7 @@ public class CircularDoublyLinkedList {
 			}
 
 		} else {
-			System.out.println("The CDLL does not exist!");
+			System.out.println(THE_CIRCULAR_DOUBLE_LINKED_LIST_DOES_NOT_EXIST);
 		}
 	}
 
@@ -111,7 +114,7 @@ public class CircularDoublyLinkedList {
 	// deletion method
 	public void deleteNode(int location) {
 		if (head == null) {
-			System.out.println("The cicular double linked list does not exist");
+			System.out.println(THE_CIRCULAR_DOUBLE_LINKED_LIST_DOES_NOT_EXIST);
 			return;
 		} else if (location == 0) {
 			// We are deleting a node at the start of the circular double linked list
@@ -167,7 +170,7 @@ public class CircularDoublyLinkedList {
 		}
 		head = null;
 		tail = null;
-		System.out.println("The circular double linked list has been deleted.");
+		System.out.println(THE_CIRCULAR_DOUBLE_LINKED_LIST_HAS_BEEN_DELETED);
 	}
 
 }

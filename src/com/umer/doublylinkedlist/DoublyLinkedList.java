@@ -1,10 +1,10 @@
 package com.umer.doublylinkedlist;
 
-import java.util.function.Predicate;
-
 import com.umer.common.DoublyNode;
 
 public class DoublyLinkedList {
+	private static final String THE_DOUBLY_LINKED_LIST_HAS_BEEN_DELETED = "The doubly linked list has been deleted.";
+	private static final String THE_DOUBLY_LINKED_LIST_DOES_NOT_EXIST = "The Doubly linked list does not exist.";
 	DoublyNode head;
 	DoublyNode tail;
 	int size;
@@ -65,7 +65,7 @@ public class DoublyLinkedList {
 				tempNode = tempNode.next;
 			}
 		} else {
-			System.out.println("The Doubly linked list does not exist.");
+			System.out.println(THE_DOUBLY_LINKED_LIST_DOES_NOT_EXIST);
 		}
 		System.out.println();
 	}
@@ -82,7 +82,7 @@ public class DoublyLinkedList {
 				tempnode = tempnode.prev;
 			}
 		} else {
-			System.out.println("The Doubly linked list does not exist.");
+			System.out.println(THE_DOUBLY_LINKED_LIST_DOES_NOT_EXIST);
 		}
 		System.out.println();
 	}
@@ -106,7 +106,7 @@ public class DoublyLinkedList {
 	// deletion method
 	public void deleteNodeDoublyLinkedList(int location) {
 		if (head == null) {
-			System.out.println("the double linked list does not exist.");
+			System.out.println(THE_DOUBLY_LINKED_LIST_DOES_NOT_EXIST);
 			return;
 		} else if (location == 0) {
 			// delete from the head of the linked list
@@ -161,7 +161,7 @@ public class DoublyLinkedList {
 		head = null;
 		tail = null;
 		size = 0;
-		System.out.println("The doubly linked list has been deleted.");
+		System.out.println(THE_DOUBLY_LINKED_LIST_HAS_BEEN_DELETED);
 	}
 
 }
