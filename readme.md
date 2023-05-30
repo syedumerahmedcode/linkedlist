@@ -40,6 +40,8 @@
 - [Searching in circular doubly linked list](#searching-in-circular-doubly-linked-list)
 - [Deletion in circular doubly linked list](#deletion-in-circular-doubly-linked-list)
 - [Deleting entire circular doubly linked list](#deletion-in-circular-doubly-linked-list)
+- [Summary of time and space complexity](#summary-of-time-and-space-complexity)
+- [Time complexity of arrays vs linked list](#time-complexity-of-arrays-vs-linked-list)
 - [Project structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
@@ -217,7 +219,11 @@ Time complexity: O(1)
 - Time complexity of Deleting entire Circular Doubly linked list: O(n).
 
 ## Summary of time and space complexity
--  TODO: Add a diagram depicting the table of time and space complexities for circular double linked list. (124)
+- TODO: Add a diagram depicting the table of time and space complexities for circular double linked list. (124)
+
+## Time complexity of arrays vs linked list
+- TODO: Add a diagram depicting the table of time complexities for arrays vs linked list. (125)
+
  
 
 ## Project structure
