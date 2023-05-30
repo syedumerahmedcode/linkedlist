@@ -98,7 +98,7 @@ The creation of a singly linked list follows the following pseudo code:
 The following three variations are  possible for insertion in a singly linked list:
 
 - At the beginning of a linked list
-- After a node in the middle of linekd list
+- After a node in the middle of linked list
 - At the end of a linked list
 
 - TODO: Create 3 diagrams showing step-by-step of insertion of Singly Linked List in memory. (89)
