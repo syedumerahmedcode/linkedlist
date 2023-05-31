@@ -1,4 +1,4 @@
-package com.umer.singlylinkedlist;
+package com.umer.singlelinkedlist;
 
 import com.umer.common.Node;
 
@@ -19,11 +19,15 @@ public class SingleLinedList {
 		node.value = nodeValue;
 		head = node;
 		tail = node;
-		size++;
+		increaseSize();
 		return node;
 	}
 
-	// Insert method for SinglyLinkedList
+	private void increaseSize() {
+		size++;
+	}
+
+	// Insert method for singleyLinkedList
 	public void insert(int nodeValue, int location) {
 		Node node = new Node();
 		node.value = nodeValue;
@@ -58,10 +62,10 @@ public class SingleLinedList {
 			tempnode.next = node;
 			node.next = nextNode;
 		}
-		size++;
+		increaseSize();
 	}
 
-	// Traversal of singly linked list
+	// Traversal of single linked list
 	public void traverse() {
 		if (head == null) {
 			System.out.println(SINGLE_LINKED_LIST_DOES_NOT_EXIST);
@@ -94,7 +98,7 @@ public class SingleLinedList {
 		return false;
 	}
 
-	// Deleting a node from a singly linked list
+	// Deleting a node from a single linked list
 	public void delete(int location) {
 		if (head == null) {
 			// Since head points to null, this means that there is no linked list present.
@@ -105,7 +109,7 @@ public class SingleLinedList {
 			// We set the head to its next element. By doing this, eventually the node will
 			// be removed (eventually garbage collected)
 			head = head.next;
-			size--;
+			decreaseSize();
 			if (size == 0) {
 				// Case where we have only one element in the linked list
 				tail = null;
@@ -119,13 +123,13 @@ public class SingleLinedList {
 			if (tempNode == head) {
 				// Case where we have only one element in the linked list
 				tail = head = null;
-				size--;
+				decreaseSize();
 				return;
 			}
 			// more than one element in the linked list
 			tempNode.next = null;
 			tail = tempNode;
-			size--;
+			decreaseSize();
 		} else {
 			// We are deleting an element from somewhere in the middle of the linked list
 			Node tempNode = head;
@@ -135,12 +139,16 @@ public class SingleLinedList {
 			// By doing this, we skip the node at the 'location', hence deleting it from the
 			// memory
 			tempNode.next = tempNode.next.next;
-			size--;
+			decreaseSize();
 		}
 	}
 
-	// Delete entire singly linked list
-	public void deleteSinglyLinkedList() {
+	private void decreaseSize() {
+		size--;
+	}
+
+	// Delete entire single linked list
+	public void deleteSingleLinkedList() {
 		head = tail = null;
 		System.out.println(THE_SINGLE_LINKED_LIST_IS_DELETED_SUCCESSFULLY);
 		size = 0;

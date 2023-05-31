@@ -1,33 +1,33 @@
-package com.umer.circulardoublylinkedlist;
+package com.umer.circulardoublelinkedlist;
 
-import com.umer.common.DoublyNode;
+import com.umer.common.DoubleNode;
 
 public class CircularDoubleLinkedList {
 
 	private static final String THE_CIRCULAR_DOUBLE_LINKED_LIST_DOES_NOT_EXIST = "The circular double linked list does not exist.";
 	private static final String THE_CIRCULAR_DOUBLE_LINKED_LIST_HAS_BEEN_DELETED = "The circular double linked list has been deleted.";
 	
-	public DoublyNode head;
-	public DoublyNode tail;
+	public DoubleNode head;
+	public DoubleNode tail;
 	public int size = 0;
 
 	// Create Circular Double linked list
-	public DoublyNode createCircularDoublyLinkedList(int nodeValue) {
-		head = new DoublyNode();
-		DoublyNode newNode = new DoublyNode();
+	public DoubleNode createCircularDoublyLinkedList(int nodeValue) {
+		head = new DoubleNode();
+		DoubleNode newNode = new DoubleNode();
 		newNode.value = nodeValue;
 		head = newNode;
 		tail = newNode;
 
 		newNode.next = newNode;
 		newNode.prev = newNode;
-		size++;
+		increaseSize();
 		return head;
 	}
 
 	// Insertion method
 	public void insertNode(int nodeValue, int location) {
-		DoublyNode newNode = new DoublyNode();
+		DoubleNode newNode = new DoubleNode();
 		newNode.value = nodeValue;
 		if (head == null) {
 			// The circular doubly linked list does not exist so we create it.
@@ -47,7 +47,7 @@ public class CircularDoubleLinkedList {
 			tail.next = newNode;
 			tail = newNode;
 		} else {
-			DoublyNode tempNode = head;
+			DoubleNode tempNode = head;
 			int index = 0;
 			while (index < location - 1) {
 				tempNode = tempNode.next;
@@ -58,13 +58,17 @@ public class CircularDoubleLinkedList {
 			tempNode.next = newNode;
 			newNode.next.prev = newNode;
 		}
+		increaseSize();
+	}
+
+	private void increaseSize() {
 		size++;
 	}
 
 	// traverse circular double linked list
 	public void traverse() {
 		if (head != null) {
-			DoublyNode tempNode = head;
+			DoubleNode tempNode = head;
 			for (int i = 0; i < size; i++) {
 				System.out.print(tempNode.value);
 				if (i != size - 1) {
@@ -79,9 +83,9 @@ public class CircularDoubleLinkedList {
 	}
 
 	// Reverse Traversal
-	void reverseTraversalCDLL() {
+	void reverseTraversal() {
 		if (head != null) {
-			DoublyNode tempNode = tail;
+			DoubleNode tempNode = tail;
 			for (int i = 0; i < size; i++) {
 				System.out.print(tempNode.value);
 				if (i != size - 1) {
@@ -98,7 +102,7 @@ public class CircularDoubleLinkedList {
 	// search for a node
 	public boolean searchNode(int nodeValue) {
 		if (head != null) {
-			DoublyNode tempNode = head;
+			DoubleNode tempNode = head;
 
 			for (int i = 0; i < size; i++) {
 				if (tempNode.value == nodeValue) {
@@ -124,14 +128,14 @@ public class CircularDoubleLinkedList {
 				head.prev = null;
 				head.next = null;
 				head = tail = null;
-				size--;
+				decreaseSize();
 				return;
 			} else {
 				// The circular double linked list contains more than one element
 				head = head.next;
 				head.prev = tail;
 				tail.next = head;
-				size--;
+				decreaseSize();
 			}
 		} else if (location >= size) {
 			// We are deleting a node at the end of the circular double linked list
@@ -140,31 +144,35 @@ public class CircularDoubleLinkedList {
 				head.prev = null;
 				head.next = null;
 				head = tail = null;
-				size--;
+				decreaseSize();
 				return;
 			} else {
 				// The circular double linked list contains more than one element
 				tail = tail.prev;
 				tail.next = head;
 				head.prev = tail;
-				size--;
+				decreaseSize();
 			}
 		} else {
 			// We are deleting a node at any given location of the circular double linked
 			// list
-			DoublyNode tempNode = head;
+			DoubleNode tempNode = head;
 			for (int i = 0; i < location - 1; i++) {
 				tempNode = tempNode.next;
 			}
 			tempNode.next = tempNode.next.next;
 			tempNode.next.prev = tempNode;
-			size--;
+			decreaseSize();
 		}
+	}
+
+	private void decreaseSize() {
+		size--;
 	}
 
 	// delete entire circular double linked list
 	public void deleteCircularDoubleLinkedList() {
-		DoublyNode tempNode = head;
+		DoubleNode tempNode = head;
 		for (int i = 0; i < size; i++) {
 			tempNode.prev = null;
 			tempNode = tempNode.next;

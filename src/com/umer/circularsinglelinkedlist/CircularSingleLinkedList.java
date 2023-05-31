@@ -1,4 +1,4 @@
-package com.umer.circularsinglylinkedlist;
+package com.umer.circularsinglelinkedlist;
 
 import com.umer.common.Node;
 
@@ -52,6 +52,10 @@ public class CircularSingleLinkedList {
 			node.next = tempNode.next;
 			tempNode.next = node;
 		}
+		increaseSize();
+	}
+
+	private void increaseSize() {
 		size++;
 	}
 
@@ -100,7 +104,7 @@ public class CircularSingleLinkedList {
 			// delete the element from the beginning of circular singly linked list
 			head = head.next;
 			tail.next = head;
-			size--;
+			decreaseSize();
 			if (size == 0) {
 				tail = null;
 				head.next = null;
@@ -115,12 +119,12 @@ public class CircularSingleLinkedList {
 			if (tempNode == null) {
 				head.next = null;
 				tail = head = null;
-				size--;
+				decreaseSize();
 				return;
 			}
 			tempNode.next = head;
 			tail = tempNode;
-			size--;
+			decreaseSize();
 		} else {
 			// delete the element from somewhere in between of the circular singly linked
 			// list
@@ -129,8 +133,12 @@ public class CircularSingleLinkedList {
 				tempnode = tempnode.next;
 			}
 			tempnode.next = tempnode.next.next;
-			size--;
+			decreaseSize();
 		}
+	}
+
+	private void decreaseSize() {
+		size--;
 	}
 
 	// Deleting the entire circular singly linked list

@@ -1,10 +1,10 @@
 package com.umer.execute;
 
-import com.umer.circulardoublylinkedlist.CircularDoubleLinkedList;
-import com.umer.circularsinglylinkedlist.CircularSingleLinkedList;
-import com.umer.common.DoublyNode;
-import com.umer.doublylinkedlist.DoubleLinkedList;
-import com.umer.singlylinkedlist.SingleLinedList;
+import com.umer.circulardoublelinkedlist.CircularDoubleLinkedList;
+import com.umer.circularsinglelinkedlist.CircularSingleLinkedList;
+import com.umer.common.DoubleNode;
+import com.umer.doublelinkedlist.DoubleLinkedList;
+import com.umer.singlelinkedlist.SingleLinedList;
 
 public class Execute {
 
@@ -47,7 +47,7 @@ public class Execute {
 		singlyLinedList.delete(50);
 		singlyLinedList.traverse();
 
-		singlyLinedList.deleteSinglyLinkedList();
+		singlyLinedList.deleteSingleLinkedList();
 		singlyLinedList.traverse();
 
 		System.out.println();
@@ -83,7 +83,7 @@ public class Execute {
 		circularSinglyLinkedList.traverse();
 
 		DoubleLinkedList doublyLinkedList = new DoubleLinkedList();
-		final DoublyNode initialDoublyLinkedList = doublyLinkedList.createDoubleLinkedList(1);
+		final DoubleNode initialDoublyLinkedList = doublyLinkedList.createDoubleLinkedList(1);
 		System.out.println(
 				"The current value after initialization of doubly linked list is: " + initialDoublyLinkedList.value);
 		doublyLinkedList.insert(2, 0);
@@ -104,12 +104,12 @@ public class Execute {
 		System.out.println("Travesing through the doubly linked list in forward direction");
 		doublyLinkedList.traverse();
 		int locationToDeleteAtInDoublyLinkedList = 1;
-		doublyLinkedList.deleteNodeDoublyLinkedList(locationToDeleteAtInDoublyLinkedList);
+		doublyLinkedList.deleteNodeDoubleLinkedList(locationToDeleteAtInDoublyLinkedList);
 		System.out.println("Travesing through the doubly linked list in forward direction");
 		doublyLinkedList.traverse();
 
 		locationToDeleteAtInDoublyLinkedList = 100;
-		doublyLinkedList.deleteNodeDoublyLinkedList(locationToDeleteAtInDoublyLinkedList);
+		doublyLinkedList.deleteNodeDoubleLinkedList(locationToDeleteAtInDoublyLinkedList);
 		System.out.println("Travesing through the doubly linked list in forward direction");
 		doublyLinkedList.traverse();
 

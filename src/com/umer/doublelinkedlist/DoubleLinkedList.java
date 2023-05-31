@@ -1,19 +1,19 @@
-package com.umer.doublylinkedlist;
+package com.umer.doublelinkedlist;
 
-import com.umer.common.DoublyNode;
+import com.umer.common.DoubleNode;
 
 public class DoubleLinkedList {
 	
 	private static final String THE_DOUBLE_LINKED_LIST_HAS_BEEN_DELETED = "The double linked list has been deleted.";
 	private static final String THE_DOUBLE_LINKED_LIST_DOES_NOT_EXIST = "The Double linked list does not exist.";
 	
-	DoublyNode head;
-	DoublyNode tail;
+	DoubleNode head;
+	DoubleNode tail;
 	int size;
 
-	public DoublyNode createDoubleLinkedList(int nodeValue) {
-		head = new DoublyNode();
-		DoublyNode newNode = new DoublyNode();
+	public DoubleNode createDoubleLinkedList(int nodeValue) {
+		head = new DoubleNode();
+		DoubleNode newNode = new DoubleNode();
 		newNode.value = nodeValue;
 		newNode.prev = null;
 		newNode.next = null;
@@ -25,7 +25,7 @@ public class DoubleLinkedList {
 
 	// Insertion
 	public void insert(int nodeValue, int location) {
-		DoublyNode newNode = new DoublyNode();
+		DoubleNode newNode = new DoubleNode();
 		newNode.value = nodeValue;
 		if (head == null) {
 			createDoubleLinkedList(nodeValue);
@@ -41,7 +41,7 @@ public class DoubleLinkedList {
 			newNode.prev = tail;
 			tail = newNode;
 		} else {
-			DoublyNode tempNode = head;
+			DoubleNode tempNode = head;
 			int index = 0;
 			while (index < location - 1) {
 				tempNode = tempNode.next;
@@ -52,13 +52,17 @@ public class DoubleLinkedList {
 			tempNode.next = newNode;
 			newNode.next.prev = newNode;
 		}
+		increaseSize();
+	}
+
+	private void increaseSize() {
 		size++;
 	}
 
 	// traversal
 	public void traverse() {
 		if (head != null) {
-			DoublyNode tempNode = head;
+			DoubleNode tempNode = head;
 			for (int index = 0; index < size; index++) {
 				System.out.print(tempNode.value);
 				if (index != size - 1) {
@@ -75,7 +79,7 @@ public class DoubleLinkedList {
 	// reverse traversal
 	public void reverseTraversal() {
 		if (head != null) {
-			DoublyNode tempnode = tail;
+			DoubleNode tempnode = tail;
 			for (int index = 0; index < size; index++) {
 				System.out.print(tempnode.value);
 				if (index != size - 1) {
@@ -92,7 +96,7 @@ public class DoubleLinkedList {
 	// search node
 	public boolean searchNode(int nodeValue) {
 		if (head != null) {
-			DoublyNode tempNode = head;
+			DoubleNode tempNode = head;
 			for (int i = 0; i < size; i++) {
 				if (tempNode.value == nodeValue) {
 					System.out.println("The node value " + nodeValue + " is found at location: " + i);
@@ -101,12 +105,12 @@ public class DoubleLinkedList {
 				tempNode = tempNode.next;
 			}
 		}
-		System.out.println("The node value " + nodeValue + " is not found in doubly linked list.");
+		System.out.println("The node value " + nodeValue + " is not found in double linked list.");
 		return false;
 	}
 
 	// deletion method
-	public void deleteNodeDoublyLinkedList(int location) {
+	public void deleteNodeDoubleLinkedList(int location) {
 		if (head == null) {
 			System.out.println(THE_DOUBLE_LINKED_LIST_DOES_NOT_EXIST);
 			return;
@@ -116,46 +120,50 @@ public class DoubleLinkedList {
 				// There is only one element in the double linked list.
 				head = null;
 				tail = null;
-				size--;
+				decreaseSize();
 				return;
 			} else {
 				// There are more than 1 element in the double linked list.
 				head = head.next;
 				head.prev = null;
-				size--;
+				decreaseSize();
 				return;
 			}
 		} else if (location >= size) {
 			// delete from the end of the double linked list.
-			DoublyNode tempNode = tail.prev;
+			DoubleNode tempNode = tail.prev;
 			if (size == 1) {
 				// There is only one element in the double linked list.
 				head = null;
 				tail = null;
-				size--;
+				decreaseSize();
 				return;
 			} else {
 				tempNode.next = null;
 				tail = tempNode;
-				size--;
+				decreaseSize();
 			}
 		} else {
 			// The location is neither the start of the double linked list nor the end of
 			// the double linked list i.e. its is somewhere in the middle of the double
 			// linked list
-			DoublyNode tempNode = head;
+			DoubleNode tempNode = head;
 			for (int i = 0; i < location - 1; i++) {
 				tempNode = tempNode.next;
 			}
 			tempNode.next = tempNode.next.next;
 			tempNode.next.prev = tempNode;
-			size--;
+			decreaseSize();
 		}
+	}
+
+	private void decreaseSize() {
+		size--;
 	}
 
 	// delete entire double linked list
 	public void deleteDoubleLinkedList() {
-		DoublyNode tempNode = head;
+		DoubleNode tempNode = head;
 		for (int i = 0; i < size; i++) {
 			tempNode.prev = null;
 			tempNode.next = tempNode;
