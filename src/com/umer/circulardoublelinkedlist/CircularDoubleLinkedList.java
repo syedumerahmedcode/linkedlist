@@ -30,7 +30,7 @@ public class CircularDoubleLinkedList {
 		DoubleNode newNode = new DoubleNode();
 		newNode.value = nodeValue;
 		if (head == null) {
-			// The circular doubly linked list does not exist so we create it.
+			// The circular double linked list does not exist so we create it.
 			createCircularDoubleLinkedList(nodeValue);
 			return;
 		} else if (location == 0) {
