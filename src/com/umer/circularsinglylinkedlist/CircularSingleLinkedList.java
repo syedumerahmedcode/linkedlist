@@ -2,15 +2,17 @@ package com.umer.circularsinglylinkedlist;
 
 import com.umer.common.Node;
 
-public class CircularSinglyLinkedList {
-	private static final String THE_CIRCULAR_SINGLY_LINKED_LIST_IS_EMPTY = "The circular singly linked list is empty.";
-	private static final String THE_CIRCULAR_SINGLY_LINKED_LIST_HAS_BEEN_DELETED = "The circular singly linked list has been deleted.";
-	private static final String THE_CIRCULAR_SINGLY_LINKED_LIST_DOES_NOT_EXIST = "The circular singly linked list does not exist.";
+public class CircularSingleLinkedList {
+	
+	private static final String THE_CIRCULAR_SINGLE_LINKED_LIST_IS_EMPTY = "The circular single linked list is empty.";
+	private static final String THE_CIRCULAR_SINGLE_LINKED_LIST_HAS_BEEN_DELETED = "The circular single linked list has been deleted.";
+	private static final String THE_CIRCULAR_SINGLE_LINKED_LIST_DOES_NOT_EXIST = "The circular single linked list does not exist.";
+	
 	public Node head;
 	public Node tail;
 	public int size;
 
-	public Node create(int nodeValue) {
+	public Node createCircularSingleLinkedList(int nodeValue) {
 		head = new Node();
 		Node node = new Node();
 		node.value = nodeValue;
@@ -28,7 +30,7 @@ public class CircularSinglyLinkedList {
 		// Check if the circular singly linked list exists or not
 		if (head == null) {
 			// If it doles not exist, create it.
-			create(nodeValue);
+			createCircularSingleLinkedList(nodeValue);
 			return;
 		} else if (location == 0) {
 			// inserting the node at the beginning of the list.
@@ -66,7 +68,7 @@ public class CircularSinglyLinkedList {
 			}
 			System.out.println();
 		} else {
-			System.out.println(THE_CIRCULAR_SINGLY_LINKED_LIST_DOES_NOT_EXIST);
+			System.out.println(THE_CIRCULAR_SINGLE_LINKED_LIST_DOES_NOT_EXIST);
 		}
 	}
 
@@ -84,7 +86,7 @@ public class CircularSinglyLinkedList {
 			System.out.println("Did not find the value " + nodeValue + " in the circular singly linked list.");
 			return false;
 		} else {
-			System.out.println(THE_CIRCULAR_SINGLY_LINKED_LIST_IS_EMPTY);
+			System.out.println(THE_CIRCULAR_SINGLE_LINKED_LIST_IS_EMPTY);
 			return false;
 		}
 	}
@@ -92,7 +94,7 @@ public class CircularSinglyLinkedList {
 	// Deleting a node
 	public void delete(int location) {
 		if (head == null) {
-			System.out.println(THE_CIRCULAR_SINGLY_LINKED_LIST_DOES_NOT_EXIST);
+			System.out.println(THE_CIRCULAR_SINGLE_LINKED_LIST_DOES_NOT_EXIST);
 			return;
 		} else if (location == 0) {
 			// delete the element from the beginning of circular singly linked list
@@ -134,12 +136,12 @@ public class CircularSinglyLinkedList {
 	// Deleting the entire circular singly linked list
 	public void deleteCircularSinglyLinkedlIst() {
 		if (head == null) {
-			System.out.println(THE_CIRCULAR_SINGLY_LINKED_LIST_DOES_NOT_EXIST);
+			System.out.println(THE_CIRCULAR_SINGLE_LINKED_LIST_DOES_NOT_EXIST);
 		} else {
 			head = null;
 			tail.next = null;
 			tail = null;
-			System.out.println(THE_CIRCULAR_SINGLY_LINKED_LIST_HAS_BEEN_DELETED);
+			System.out.println(THE_CIRCULAR_SINGLE_LINKED_LIST_HAS_BEEN_DELETED);
 		}
 	}
 

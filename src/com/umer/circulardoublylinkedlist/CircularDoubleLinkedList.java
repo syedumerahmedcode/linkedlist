@@ -2,10 +2,11 @@ package com.umer.circulardoublylinkedlist;
 
 import com.umer.common.DoublyNode;
 
-public class CircularDoublyLinkedList {
+public class CircularDoubleLinkedList {
 
 	private static final String THE_CIRCULAR_DOUBLE_LINKED_LIST_DOES_NOT_EXIST = "The circular double linked list does not exist.";
 	private static final String THE_CIRCULAR_DOUBLE_LINKED_LIST_HAS_BEEN_DELETED = "The circular double linked list has been deleted.";
+	
 	public DoublyNode head;
 	public DoublyNode tail;
 	public int size = 0;

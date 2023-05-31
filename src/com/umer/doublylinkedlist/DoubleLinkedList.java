@@ -2,14 +2,16 @@ package com.umer.doublylinkedlist;
 
 import com.umer.common.DoublyNode;
 
-public class DoublyLinkedList {
-	private static final String THE_DOUBLY_LINKED_LIST_HAS_BEEN_DELETED = "The doubly linked list has been deleted.";
-	private static final String THE_DOUBLY_LINKED_LIST_DOES_NOT_EXIST = "The Doubly linked list does not exist.";
+public class DoubleLinkedList {
+	
+	private static final String THE_DOUBLE_LINKED_LIST_HAS_BEEN_DELETED = "The double linked list has been deleted.";
+	private static final String THE_DOUBLE_LINKED_LIST_DOES_NOT_EXIST = "The Double linked list does not exist.";
+	
 	DoublyNode head;
 	DoublyNode tail;
 	int size;
 
-	public DoublyNode create(int nodeValue) {
+	public DoublyNode createDoubleLinkedList(int nodeValue) {
 		head = new DoublyNode();
 		DoublyNode newNode = new DoublyNode();
 		newNode.value = nodeValue;
@@ -26,7 +28,7 @@ public class DoublyLinkedList {
 		DoublyNode newNode = new DoublyNode();
 		newNode.value = nodeValue;
 		if (head == null) {
-			create(nodeValue);
+			createDoubleLinkedList(nodeValue);
 			return;
 		} else if (location == 0) {
 			newNode.next = head;
@@ -65,7 +67,7 @@ public class DoublyLinkedList {
 				tempNode = tempNode.next;
 			}
 		} else {
-			System.out.println(THE_DOUBLY_LINKED_LIST_DOES_NOT_EXIST);
+			System.out.println(THE_DOUBLE_LINKED_LIST_DOES_NOT_EXIST);
 		}
 		System.out.println();
 	}
@@ -82,7 +84,7 @@ public class DoublyLinkedList {
 				tempnode = tempnode.prev;
 			}
 		} else {
-			System.out.println(THE_DOUBLY_LINKED_LIST_DOES_NOT_EXIST);
+			System.out.println(THE_DOUBLE_LINKED_LIST_DOES_NOT_EXIST);
 		}
 		System.out.println();
 	}
@@ -106,7 +108,7 @@ public class DoublyLinkedList {
 	// deletion method
 	public void deleteNodeDoublyLinkedList(int location) {
 		if (head == null) {
-			System.out.println(THE_DOUBLY_LINKED_LIST_DOES_NOT_EXIST);
+			System.out.println(THE_DOUBLE_LINKED_LIST_DOES_NOT_EXIST);
 			return;
 		} else if (location == 0) {
 			// delete from the head of the linked list
@@ -161,7 +163,7 @@ public class DoublyLinkedList {
 		head = null;
 		tail = null;
 		size = 0;
-		System.out.println(THE_DOUBLY_LINKED_LIST_HAS_BEEN_DELETED);
+		System.out.println(THE_DOUBLE_LINKED_LIST_HAS_BEEN_DELETED);
 	}
 
 }

@@ -2,15 +2,17 @@ package com.umer.singlylinkedlist;
 
 import com.umer.common.Node;
 
-public class SinglyLinedList {
-	private static final String THE_SINGLY_LINKED_LIST_IS_DELETED_SUCCESSFULLY = "The singly linked list is deleted successfully.";
+public class SingleLinedList {
+	
+	private static final String THE_SINGLE_LINKED_LIST_IS_DELETED_SUCCESSFULLY = "The single linked list is deleted successfully.";
 	private static final String NODE_VALUE_NOT_FOUND = "Node value not found.";
-	private static final String SINGLY_LINKED_LIST_DOES_NOT_EXIST = "Singly linked list does not exist.";
+	private static final String SINGLE_LINKED_LIST_DOES_NOT_EXIST = "Single linked list does not exist.";
+	
 	public Node head;
 	public Node tail;
 	public int size;
 
-	public Node create(int nodeValue) {
+	public Node createSingleLinkedList(int nodeValue) {
 		head = new Node();
 		Node node = new Node();
 		node.next = null;
@@ -27,7 +29,7 @@ public class SinglyLinedList {
 		node.value = nodeValue;
 		if (head == null) {
 			// This means that the linked list does not exists yet.
-			create(nodeValue);
+			createSingleLinkedList(nodeValue);
 			return;
 		} else if (location == 0) {
 			node.next = head;
@@ -62,7 +64,7 @@ public class SinglyLinedList {
 	// Traversal of singly linked list
 	public void traverse() {
 		if (head == null) {
-			System.out.println(SINGLY_LINKED_LIST_DOES_NOT_EXIST);
+			System.out.println(SINGLE_LINKED_LIST_DOES_NOT_EXIST);
 		} else {
 			Node tempNode = head;
 			for (int i = 0; i < size; i++) {
@@ -96,7 +98,7 @@ public class SinglyLinedList {
 	public void delete(int location) {
 		if (head == null) {
 			// Since head points to null, this means that there is no linked list present.
-			System.out.println(SINGLY_LINKED_LIST_DOES_NOT_EXIST);
+			System.out.println(SINGLE_LINKED_LIST_DOES_NOT_EXIST);
 		} else if (location == 0) {
 			// This means that we want to delete the first element in linked list
 
@@ -140,7 +142,7 @@ public class SinglyLinedList {
 	// Delete entire singly linked list
 	public void deleteSinglyLinkedList() {
 		head = tail = null;
-		System.out.println(THE_SINGLY_LINKED_LIST_IS_DELETED_SUCCESSFULLY);
+		System.out.println(THE_SINGLE_LINKED_LIST_IS_DELETED_SUCCESSFULLY);
 		size = 0;
 	}
 
