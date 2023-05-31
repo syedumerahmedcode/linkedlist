@@ -2,7 +2,7 @@ package com.umer.singlelinkedlist;
 
 import com.umer.common.Node;
 
-public class SingleLinedList {
+public class SingleLinkedList {
 	
 	private static final String THE_SINGLE_LINKED_LIST_IS_DELETED_SUCCESSFULLY = "The single linked list is deleted successfully.";
 	private static final String NODE_VALUE_NOT_FOUND = "Node value not found.";
@@ -27,7 +27,7 @@ public class SingleLinedList {
 		size++;
 	}
 
-	// Insert method for singleyLinkedList
+	// Insert method for singleLinkedList
 	public void insert(int nodeValue, int location) {
 		Node node = new Node();
 		node.value = nodeValue;

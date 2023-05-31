@@ -4,7 +4,7 @@ import com.umer.circulardoublelinkedlist.CircularDoubleLinkedList;
 import com.umer.circularsinglelinkedlist.CircularSingleLinkedList;
 import com.umer.common.DoubleNode;
 import com.umer.doublelinkedlist.DoubleLinkedList;
-import com.umer.singlelinkedlist.SingleLinedList;
+import com.umer.singlelinkedlist.SingleLinkedList;
 
 public class Execute {
 
@@ -13,7 +13,7 @@ public class Execute {
 	private static final String THE_CURRENT_STATUS_OF_THE_SINGLY_LINKED_LIST_SHOULD_BE = "The current status of the singly linked list should be";
 
 	public static void main(String[] args) {
-		SingleLinedList singlyLinedList = new SingleLinedList();
+		SingleLinkedList singlyLinedList = new SingleLinkedList();
 		singlyLinedList.createSingleLinkedList(5);
 		System.out.println("Currently, the head of the linked list is: " + singlyLinedList.head.value);
 		singlyLinedList.insert(6, 1);
@@ -79,7 +79,7 @@ public class Execute {
 		circularSinglyLinkedList.search(7);
 		circularSinglyLinkedList.delete(2);
 		circularSinglyLinkedList.traverse();
-		circularSinglyLinkedList.deleteCircularSinglyLinkedlIst();
+		circularSinglyLinkedList.deleteCircularSingleLinkedList();
 		circularSinglyLinkedList.traverse();
 
 		DoubleLinkedList doublyLinkedList = new DoubleLinkedList();
@@ -118,7 +118,7 @@ public class Execute {
 
 		System.out.println("Checking various operations of circular double linked list.");
 		CircularDoubleLinkedList circularDoublyLinkedList = new CircularDoubleLinkedList();
-		circularDoublyLinkedList.createCircularDoublyLinkedList(1);
+		circularDoublyLinkedList.createCircularDoubleLinkedList(1);
 		System.out.println("The value of head in circular double linked list: " + circularDoublyLinkedList.head.value);
 
 		circularDoublyLinkedList.insertNode(2, 0);

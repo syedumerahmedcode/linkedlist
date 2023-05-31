@@ -12,7 +12,7 @@ public class CircularDoubleLinkedList {
 	public int size = 0;
 
 	// Create Circular Double linked list
-	public DoubleNode createCircularDoublyLinkedList(int nodeValue) {
+	public DoubleNode createCircularDoubleLinkedList(int nodeValue) {
 		head = new DoubleNode();
 		DoubleNode newNode = new DoubleNode();
 		newNode.value = nodeValue;
@@ -31,7 +31,7 @@ public class CircularDoubleLinkedList {
 		newNode.value = nodeValue;
 		if (head == null) {
 			// The circular doubly linked list does not exist so we create it.
-			createCircularDoublyLinkedList(nodeValue);
+			createCircularDoubleLinkedList(nodeValue);
 			return;
 		} else if (location == 0) {
 			// node should be inserted at the beginning of the list
