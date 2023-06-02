@@ -52,8 +52,7 @@ public class SingleLinkedList {
 			int index = 0;
 			while (index < location - 1) {
 				// We iterate over till we reach the position in the linked list where a new
-				// node
-				// should be inserted.
+				// node should be inserted.
 				tempnode = tempnode.next;
 				index++;
 			}

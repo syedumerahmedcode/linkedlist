@@ -8,6 +8,18 @@ import com.umer.singlelinkedlist.SingleLinkedList;
 
 public class Execute {
 
+	private static final String SEARCHING_FOR_A_NODE_VALUE_IN_THE_CIRCULAR_DOUBLE_LINKED_LIST = "Searching for a node value in the circular double linked list";
+	private static final String THE_VALUE_OF_HEAD_IN_CIRCULAR_DOUBLE_LINKED_LIST = "The value of head in circular double linked list: ";
+	private static final String CHECKING_VARIOUS_OPERATIONS_OF_CIRCULAR_DOUBLE_LINKED_LIST = "Checking various operations of circular double linked list.";
+	private static final String SEARCHING_FOR_A_NODE_VALUE_THAT_DOES_NOT_EXIST_IN_THE_DOUBLY_LINKED_LIST = "Searching for a node value that does not exist in the doubly linked list";
+	private static final String SEARCHING_FOR_A_NODE_VALUE_THAT_EXISTS_IN_THE_DOUBLY_LINKED_LIST = "Searching for a node value that exists in the doubly linked list";
+	private static final String TRAVESING_THROUGH_THE_DOUBLY_LINKED_LIST_IN_BACKWARD_DIRECTION = "Travesing through the doubly linked list in backward direction";
+	private static final String TRAVESING_THROUGH_THE_DOUBLY_LINKED_LIST_IN_FORWARD_DIRECTION = "Travesing through the doubly linked list in forward direction";
+	private static final String THE_CURRENT_VALUE_AFTER_INITIALIZATION_OF_DOUBLY_LINKED_LIST_IS = "The current value after initialization of doubly linked list is: ";
+	private static final String SINCE_THE_CURRENT_SIZE_IS_ONLY_1_HENCE_THE_NEXT_NODE_VALUE_OF_CIRCULAR_SINGLY_LINKED_LIST_IS_ALSO = "Since the current size is only 1, hence the next node value of circular singly linked list is also--->";
+	private static final String FIRST_NODE_VALUE_FETCHED_FROM_CIRCULAR_SINGLY_LINKED_LIST_IS = "First node value fetched from Circular Singly Linked List is---> ";
+	private static final String THE_FIRST_NODE_VALUE_INSERTED_IN_CIRCULAR_SINGLY_LINKED_LIST_IS = "The first node value inserted in circular singly linked list is: ";
+	private static final String CHECKING_OPERATIONS_OF_CIRCULAR_SINGLY_LINKED_LIST = "Checking operations of circular singly linked list.";
 	private static final String TRAVERSING_THROUGH_THE_CURRENT_STATE_OF_THE_SINGLY_LINKED_LIST = "Traversing through the current state of the singly linked list";
 	private static final String COMMA = ",";
 	private static final String THE_CURRENT_STATUS_OF_THE_SINGLY_LINKED_LIST_SHOULD_BE = "The current status of the singly linked list should be";
@@ -53,7 +65,7 @@ public class Execute {
 		System.out.println();
 		System.out.println();
 
-		System.out.println("Checking operations of circular singly linked list.");
+		System.out.println(CHECKING_OPERATIONS_OF_CIRCULAR_SINGLY_LINKED_LIST);
 
 		System.out.println();
 		System.out.println();
@@ -61,12 +73,12 @@ public class Execute {
 		CircularSingleLinkedList circularSinglyLinkedList = new CircularSingleLinkedList();
 		final int firstNodeValueForCircularSinglyLinkedList = 5;
 		circularSinglyLinkedList.createCircularSingleLinkedList(firstNodeValueForCircularSinglyLinkedList);
-		System.out.println("The first node value inserted in circular singly linked list is: "
+		System.out.println(THE_FIRST_NODE_VALUE_INSERTED_IN_CIRCULAR_SINGLY_LINKED_LIST_IS
 				+ firstNodeValueForCircularSinglyLinkedList);
-		System.out.println("First node value fetched from Circular Singly Linked List is---> "
+		System.out.println(FIRST_NODE_VALUE_FETCHED_FROM_CIRCULAR_SINGLY_LINKED_LIST_IS
 				+ circularSinglyLinkedList.head.value);
 		System.out.println(
-				"Since the current size is only 1, hence the next node value of circular singly linked list is also--->"
+				SINCE_THE_CURRENT_SIZE_IS_ONLY_1_HENCE_THE_NEXT_NODE_VALUE_OF_CIRCULAR_SINGLY_LINKED_LIST_IS_ALSO
 						+ circularSinglyLinkedList.head.next.value);
 
 		circularSinglyLinkedList.insert(4, 0);
@@ -85,48 +97,48 @@ public class Execute {
 		DoubleLinkedList doublyLinkedList = new DoubleLinkedList();
 		final DoubleNode initialDoublyLinkedList = doublyLinkedList.createDoubleLinkedList(1);
 		System.out.println(
-				"The current value after initialization of doubly linked list is: " + initialDoublyLinkedList.value);
+				THE_CURRENT_VALUE_AFTER_INITIALIZATION_OF_DOUBLY_LINKED_LIST_IS + initialDoublyLinkedList.value);
 		doublyLinkedList.insert(2, 0);
 		doublyLinkedList.insert(3, 1);
 		doublyLinkedList.insert(4, 7);
-		System.out.println("Travesing through the doubly linked list in forward direction");
+		System.out.println(TRAVESING_THROUGH_THE_DOUBLY_LINKED_LIST_IN_FORWARD_DIRECTION);
 		doublyLinkedList.traverse();
-		System.out.println("Travesing through the doubly linked list in backward direction");
+		System.out.println(TRAVESING_THROUGH_THE_DOUBLY_LINKED_LIST_IN_BACKWARD_DIRECTION);
 		doublyLinkedList.reverseTraversal();
 		int valueToSearchForInDoublyLinkedlist = 4;
-		System.out.println("Searching for a node value that exists in the doubly linked list");
+		System.out.println(SEARCHING_FOR_A_NODE_VALUE_THAT_EXISTS_IN_THE_DOUBLY_LINKED_LIST);
 		doublyLinkedList.searchNode(valueToSearchForInDoublyLinkedlist);
 
 		valueToSearchForInDoublyLinkedlist = 100;
-		System.out.println("Searching for a node value that does not exist in the doubly linked list");
+		System.out.println(SEARCHING_FOR_A_NODE_VALUE_THAT_DOES_NOT_EXIST_IN_THE_DOUBLY_LINKED_LIST);
 		doublyLinkedList.searchNode(valueToSearchForInDoublyLinkedlist);
 
-		System.out.println("Travesing through the doubly linked list in forward direction");
+		System.out.println(TRAVESING_THROUGH_THE_DOUBLY_LINKED_LIST_IN_FORWARD_DIRECTION);
 		doublyLinkedList.traverse();
 		int locationToDeleteAtInDoublyLinkedList = 1;
 		doublyLinkedList.deleteNodeDoubleLinkedList(locationToDeleteAtInDoublyLinkedList);
-		System.out.println("Travesing through the doubly linked list in forward direction");
+		System.out.println(TRAVESING_THROUGH_THE_DOUBLY_LINKED_LIST_IN_FORWARD_DIRECTION);
 		doublyLinkedList.traverse();
 
 		locationToDeleteAtInDoublyLinkedList = 100;
 		doublyLinkedList.deleteNodeDoubleLinkedList(locationToDeleteAtInDoublyLinkedList);
-		System.out.println("Travesing through the doubly linked list in forward direction");
+		System.out.println(TRAVESING_THROUGH_THE_DOUBLY_LINKED_LIST_IN_FORWARD_DIRECTION);
 		doublyLinkedList.traverse();
 
 		doublyLinkedList.deleteDoubleLinkedList();
 		doublyLinkedList.traverse();
 
-		System.out.println("Checking various operations of circular double linked list.");
+		System.out.println(CHECKING_VARIOUS_OPERATIONS_OF_CIRCULAR_DOUBLE_LINKED_LIST);
 		CircularDoubleLinkedList circularDoublyLinkedList = new CircularDoubleLinkedList();
 		circularDoublyLinkedList.createCircularDoubleLinkedList(1);
-		System.out.println("The value of head in circular double linked list: " + circularDoublyLinkedList.head.value);
+		System.out.println(THE_VALUE_OF_HEAD_IN_CIRCULAR_DOUBLE_LINKED_LIST + circularDoublyLinkedList.head.value);
 
 		circularDoublyLinkedList.insertNode(2, 0);
 		circularDoublyLinkedList.insertNode(3, 2);
 		circularDoublyLinkedList.insertNode(4, 5);
 		circularDoublyLinkedList.traverse();
 //		circularDoublyLinkedList.reverseTraversal();
-		System.out.println("Searching for a node value in the circular double linked list");
+		System.out.println(SEARCHING_FOR_A_NODE_VALUE_IN_THE_CIRCULAR_DOUBLE_LINKED_LIST);
 		int valueToSearchForInCircularDoublyLinkedList = 3;
 		circularDoublyLinkedList.searchNode(valueToSearchForInCircularDoublyLinkedList);
 

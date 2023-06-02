@@ -1,5 +1,6 @@
 package com.umer.circularsinglelinkedlist;
 
+import com.umer.common.Constants;
 import com.umer.common.Node;
 
 public class CircularSingleLinkedList {
@@ -66,7 +67,7 @@ public class CircularSingleLinkedList {
 			for (int index = 0; index < size; index++) {
 				System.out.print(tempNode.value);
 				if (index != size - 1) {
-					System.out.print("-->");
+					System.out.print(Constants.FORWARD_LINK);
 				}
 				tempNode = tempNode.next;
 			}
