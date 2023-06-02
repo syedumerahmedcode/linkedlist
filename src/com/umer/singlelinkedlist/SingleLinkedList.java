@@ -1,5 +1,6 @@
 package com.umer.singlelinkedlist;
 
+import com.umer.common.Constants;
 import com.umer.common.Node;
 
 public class SingleLinkedList {
@@ -74,7 +75,7 @@ public class SingleLinkedList {
 			for (int i = 0; i < size; i++) {
 				System.out.print(tempNode.value);
 				if (i < size - 1) {
-					System.out.print("-->");
+					System.out.print(Constants.FORWARD_LINK);
 				}
 				tempNode = tempNode.next;
 			}

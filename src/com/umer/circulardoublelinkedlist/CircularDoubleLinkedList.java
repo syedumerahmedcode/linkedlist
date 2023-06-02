@@ -1,6 +1,7 @@
 package com.umer.circulardoublelinkedlist;
 
 import com.umer.common.DoubleNode;
+import com.umer.common.Constants;
 
 public class CircularDoubleLinkedList {
 
@@ -72,7 +73,7 @@ public class CircularDoubleLinkedList {
 			for (int i = 0; i < size; i++) {
 				System.out.print(tempNode.value);
 				if (i != size - 1) {
-					System.out.print("-->");
+					System.out.print(Constants.FORWARD_LINK);
 				}
 				tempNode = tempNode.next;
 			}
@@ -89,7 +90,7 @@ public class CircularDoubleLinkedList {
 			for (int i = 0; i < size; i++) {
 				System.out.print(tempNode.value);
 				if (i != size - 1) {
-					System.out.print(" <- ");
+					System.out.print(Constants.BACKWARD_LINK);
 				}
 				tempNode = tempNode.prev;
 			}

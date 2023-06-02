@@ -27,7 +27,7 @@ public class CircularSingleLinkedList {
 	public void insert(int nodeValue, int location) {
 		Node node = new Node();
 		node.value = nodeValue;
-		// Check if the circular singly linked list exists or not
+		// Check if the circular single linked list exists or not
 		if (head == null) {
 			// If it doles not exist, create it.
 			createCircularSingleLinkedList(nodeValue);
@@ -87,7 +87,7 @@ public class CircularSingleLinkedList {
 				}
 				tempNode = tempNode.next;
 			}
-			System.out.println("Did not find the value " + nodeValue + " in the circular singly linked list.");
+			System.out.println("Did not find the value " + nodeValue + " in the circular single linked list.");
 			return false;
 		} else {
 			System.out.println(THE_CIRCULAR_SINGLE_LINKED_LIST_IS_EMPTY);
@@ -101,7 +101,7 @@ public class CircularSingleLinkedList {
 			System.out.println(THE_CIRCULAR_SINGLE_LINKED_LIST_DOES_NOT_EXIST);
 			return;
 		} else if (location == 0) {
-			// delete the element from the beginning of circular singly linked list
+			// delete the element from the beginning of circular single linked list
 			head = head.next;
 			tail.next = head;
 			decreaseSize();
@@ -111,7 +111,7 @@ public class CircularSingleLinkedList {
 				head = null;
 			}
 		} else if (location >= size) {
-			// delete the element from the end of circular singly linked list
+			// delete the element from the end of circular single linked list
 			Node tempNode = head;
 			for (int index = 0; index < size - 1; index++) {
 				tempNode = tempNode.next;
@@ -126,7 +126,7 @@ public class CircularSingleLinkedList {
 			tail = tempNode;
 			decreaseSize();
 		} else {
-			// delete the element from somewhere in between of the circular singly linked
+			// delete the element from somewhere in between of the circular single linked
 			// list
 			Node tempnode = head;
 			for (int index = 0; index < location - 1; index++) {
@@ -141,8 +141,8 @@ public class CircularSingleLinkedList {
 		size--;
 	}
 
-	// Deleting the entire circular singly linked list
-	public void deleteCircularSinglyLinkedlIst() {
+	// Deleting the entire circular single linked list
+	public void deleteCircularSingleLinkedList() {
 		if (head == null) {
 			System.out.println(THE_CIRCULAR_SINGLE_LINKED_LIST_DOES_NOT_EXIST);
 		} else {

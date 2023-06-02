@@ -1,5 +1,6 @@
 package com.umer.doublelinkedlist;
 
+import com.umer.common.Constants;
 import com.umer.common.DoubleNode;
 
 public class DoubleLinkedList {
@@ -66,7 +67,7 @@ public class DoubleLinkedList {
 			for (int index = 0; index < size; index++) {
 				System.out.print(tempNode.value);
 				if (index != size - 1) {
-					System.out.print("-->");
+					System.out.print(Constants.FORWARD_LINK);
 				}
 				tempNode = tempNode.next;
 			}
@@ -83,7 +84,7 @@ public class DoubleLinkedList {
 			for (int index = 0; index < size; index++) {
 				System.out.print(tempnode.value);
 				if (index != size - 1) {
-					System.out.print("-->");
+					System.out.print(Constants.FORWARD_LINK);
 				}
 				tempnode = tempnode.prev;
 			}
