@@ -4,10 +4,10 @@ import com.umer.common.Constants;
 import com.umer.common.DoubleNode;
 
 public class DoubleLinkedList {
-	
+
 	private static final String THE_DOUBLE_LINKED_LIST_HAS_BEEN_DELETED = "The double linked list has been deleted.";
 	private static final String THE_DOUBLE_LINKED_LIST_DOES_NOT_EXIST = "The Double linked list does not exist.";
-	
+
 	DoubleNode head;
 	DoubleNode tail;
 	int size;
@@ -29,22 +29,30 @@ public class DoubleLinkedList {
 		DoubleNode newNode = new DoubleNode();
 		newNode.value = nodeValue;
 		if (head == null) {
+			// This means that the linked list does not exists yet.
 			createDoubleLinkedList(nodeValue);
 			return;
 		} else if (location == 0) {
+			// insert at the start of the linked list
 			newNode.next = head;
 			newNode.prev = null;
 			head.prev = newNode;
 			head = newNode;
 		} else if (location >= size) {
+			// Since the location is greater than the size of the node, This means that the
+			// node should be inserted at the end of the list.
 			newNode.next = null;
 			tail.next = newNode;
 			newNode.prev = tail;
 			tail = newNode;
 		} else {
+			// This means that we have to insert the node somewhere in the middle of the
+			// linked list
 			DoubleNode tempNode = head;
 			int index = 0;
 			while (index < location - 1) {
+				// We iterate over till we reach the position in the linked list where a new
+				// node should be inserted.
 				tempNode = tempNode.next;
 				index++;
 			}
@@ -74,7 +82,6 @@ public class DoubleLinkedList {
 		} else {
 			System.out.println(THE_DOUBLE_LINKED_LIST_DOES_NOT_EXIST);
 		}
-		System.out.println();
 	}
 
 	// reverse traversal
@@ -140,6 +147,7 @@ public class DoubleLinkedList {
 				decreaseSize();
 				return;
 			} else {
+				// more than one element in the linked list
 				tempNode.next = null;
 				tail = tempNode;
 				decreaseSize();
@@ -152,6 +160,8 @@ public class DoubleLinkedList {
 			for (int i = 0; i < location - 1; i++) {
 				tempNode = tempNode.next;
 			}
+			// By doing this, we skip the node at the 'location', hence deleting it from the
+			// memory
 			tempNode.next = tempNode.next.next;
 			tempNode.next.prev = tempNode;
 			decreaseSize();
@@ -165,10 +175,14 @@ public class DoubleLinkedList {
 	// delete entire double linked list
 	public void deleteDoubleLinkedList() {
 		DoubleNode tempNode = head;
+		// first delete the link to previous node so that it becomes similar to single
+		// linked list
 		for (int i = 0; i < size; i++) {
 			tempNode.prev = null;
 			tempNode.next = tempNode;
 		}
+		// setting head and tail to null will disconnect links to the list. Hence, it
+		// will be eventually garbage collected.
 		head = null;
 		tail = null;
 		size = 0;

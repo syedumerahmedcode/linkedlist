@@ -4,11 +4,11 @@ import com.umer.common.Constants;
 import com.umer.common.Node;
 
 public class SingleLinkedList {
-	
+
 	private static final String THE_SINGLE_LINKED_LIST_IS_DELETED_SUCCESSFULLY = "The single linked list is deleted successfully.";
 	private static final String NODE_VALUE_NOT_FOUND = "Node value not found.";
 	private static final String SINGLE_LINKED_LIST_DOES_NOT_EXIST = "Single linked list does not exist.";
-	
+
 	public Node head;
 	public Node tail;
 	public int size;
@@ -37,6 +37,7 @@ public class SingleLinkedList {
 			createSingleLinkedList(nodeValue);
 			return;
 		} else if (location == 0) {
+			// insert at the start of the linked list
 			node.next = head;
 			head = node;
 		} else if (location >= size) {
@@ -55,6 +56,7 @@ public class SingleLinkedList {
 				// node should be inserted.
 				tempnode = tempnode.next;
 				index++;
+
 			}
 			// We are at the location in the linked list where the new node should be
 			// inserted.
@@ -71,15 +73,14 @@ public class SingleLinkedList {
 			System.out.println(SINGLE_LINKED_LIST_DOES_NOT_EXIST);
 		} else {
 			Node tempNode = head;
-			for (int i = 0; i < size; i++) {
+			for (int index = 0; index < size; index++) {
 				System.out.print(tempNode.value);
-				if (i < size - 1) {
+				if (index < size - 1) {
 					System.out.print(Constants.FORWARD_LINK);
 				}
 				tempNode = tempNode.next;
 			}
 		}
-		System.out.println("");
 	}
 
 	// Search for a node
@@ -149,9 +150,11 @@ public class SingleLinkedList {
 
 	// Delete entire single linked list
 	public void deleteSingleLinkedList() {
+		// setting head and tail to null will disconnect links to the list. Hence, it
+		// will be eventually garbage collected.
 		head = tail = null;
-		System.out.println(THE_SINGLE_LINKED_LIST_IS_DELETED_SUCCESSFULLY);
 		size = 0;
+		System.out.println(THE_SINGLE_LINKED_LIST_IS_DELETED_SUCCESSFULLY);
 	}
 
 }
