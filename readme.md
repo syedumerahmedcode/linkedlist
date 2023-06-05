@@ -149,6 +149,7 @@ Node nextNode = tempnode.next;
 tempnode.next = node;
 node.next = nextNode;
 ```
+
 Finally, the size of the linked list is increased by one.   
 
 
