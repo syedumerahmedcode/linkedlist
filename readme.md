@@ -91,6 +91,13 @@ Since this is an beginner project in which the focus is just to learn the basics
 
 The creation of a single linked list follows the following pseudo code:
 
+- A new node called head is created.
+- It value is set to the value provided.
+- Its next node is set to _null_.
+- Both _head_ and _tail_ are set to node value.
+- The size is increased by 1.
+- Finally, the node object is returned 
+
 - TODO: Add a diagram representing creation of single linked list.
 
 ## Insertion in Linked List in memory
