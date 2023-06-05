@@ -105,8 +105,53 @@ The creation of a single linked list follows the following pseudo code:
 The following three variations are  possible for insertion in a single linked list:
 
 - At the beginning of a linked list
-- After a node in the middle of linked list
+* We first check if the _head_ is null or not. If it is null,this means that the linked list does not exist yet and we call _create()_ instead.
+* If the _head_ node is not null, then we check if the _location==0_. This means that insert should happen at the start of the list.  
+
+This is achieved by doing the following:
+
+```java 
+// insert at the start of the linked list
+node.next = head;
+head = node;
+```
+  
 - At the end of a linked list
+* However, if _location >= size_, this means that the node should be inserted at the end of the list since the location is greater than the size of the node.
+
+This is achieved by doing the following:
+
+```java 
+// Since the location is greater than the size of the node, This means that the
+// node should be inserted at the end of the list.
+node.next = null;
+tail.next = node;
+tail = node;
+```
+
+- After a node somewhere in the middle of linked list.
+* If none of the above two conditions are fulfilled, it means that we have to insert the node somewhere in the middle of the linked list.
+
+First, we loop through till the position at which we want to insert the node. Then, a new node is added as follows:
+
+```java
+Node tempnode = head;
+int index = 0;
+while (index < location - 1) {
+	// We iterate over till we reach the position in the linked list where a new
+	// node should be inserted.
+	tempnode = tempnode.next;
+	index++;
+}
+// We are at the location in the linked list where the new node should be
+// inserted.
+Node nextNode = tempnode.next;
+tempnode.next = node;
+node.next = nextNode;
+```
+Finally, the size of the linked list is increased by one.   
+
+
 
 - TODO: Create 3 diagrams showing step-by-step of insertion of single Linked List in memory. (89)
 

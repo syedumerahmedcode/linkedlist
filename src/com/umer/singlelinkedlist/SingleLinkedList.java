@@ -56,7 +56,6 @@ public class SingleLinkedList {
 				// node should be inserted.
 				tempnode = tempnode.next;
 				index++;
-
 			}
 			// We are at the location in the linked list where the new node should be
 			// inserted.
