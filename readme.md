@@ -9,37 +9,37 @@
 - [Linked list](#linked-list)
 - [Types of linked list](#types-of-linked-list)
 - [Linked list in memory](#linked-list-in-memory)
-- [Singly linked list](#singly-linked-list)
-- [Creation in singly linked list](#creation-in-singly-linked-list)
-- [Traversal in singly linked list](#traversal-in-singly-linked-list)
-- [Searching in singly linked list](#searching-in-singly-linked-list)
-- [Deletion in Singly linked list](#deletion-in-singly-linked-list)
-- [Deleting entire singly linked list](#deleting-entire-singly-linked-list)
-- [Time and space complexity in singly linked list](#time-and-space-complexity-in-singly-linked-list)
-- [Circular singly linked list](#circular-singly-linked-list)
-- [Creation in Circular singly linked list](#creation-in-circular-singly-linked-list)
-- [Insertion in Circular singly linked list](#insertion-in-circular-singly-linked-list)
-- [Traversal in circular singly linked list](#traversal-in-circular-singly-linked-list)
-- [Searching in circular singly linked list](#searching-in-circular-singly-linked-list)
-- [Deletion in circular singly linked list](#deletion-in-circular-singly-linked-list)
-- [Deleting entire circular singly linked list](#deleting-entire-circular-singly-linked-list)
-- [Time and space complexity in circular singly linked list](#time-and-space-complexity-in-circular-singly-linked-list)
-- [Doubly linked list](#doubly-linked-list)
-- [Insertion in doubly linked list](#insertion-in-doubly-linked-list)
-- [Traversal in doubly linked list](#traversal-in-doubly-linked-list)
-- [Reverse Traversal in doubly linked list](#reverse-traversal-in-doubly-linked-list)
-- [Searching in doubly linked list](#searching-in-doubly-linked-list)
-- [Deletion in doubly linked list](#deletion-in-doubly-linked-list)
-- [Deletion of entire doubly linked list](#deletion-of-entire-doubly-linked-list)
-- [Time and space complexity in doubly linked list](#time-and-space-complexity-in-doubly-linked-list)
-- [Circular doubly linked list](#circular-doubly-linked-list)
-- [Creation in circular doubly linked list](#creation-in-circular-doubly-linked-list)
-- [Insertion in circular doubly linked list](#insertion-in-circular-doubly-linked-list)
-- [Traversal in circular doubly linked list](#traversal-in-circular-doubly-linked-list)
-- [Reverse Traversal in circular doubly linked list](#reverse-traversal-in-circular-doubly-linked-list)
-- [Searching in circular doubly linked list](#searching-in-circular-doubly-linked-list)
-- [Deletion in circular doubly linked list](#deletion-in-circular-doubly-linked-list)
-- [Deleting entire circular doubly linked list](#deletion-in-circular-doubly-linked-list)
+- [single linked list](#single-linked-list)
+- [Creation in single linked list](#creation-in-single-linked-list)
+- [Traversal in single linked list](#traversal-in-single-linked-list)
+- [Searching in single linked list](#searching-in-single-linked-list)
+- [Deletion in single linked list](#deletion-in-single-linked-list)
+- [Deleting entire single linked list](#deleting-entire-single-linked-list)
+- [Time and space complexity in single linked list](#time-and-space-complexity-in-single-linked-list)
+- [Circular single linked list](#circular-single-linked-list)
+- [Creation in Circular single linked list](#creation-in-circular-single-linked-list)
+- [Insertion in Circular single linked list](#insertion-in-circular-single-linked-list)
+- [Traversal in circular single linked list](#traversal-in-circular-single-linked-list)
+- [Searching in circular single linked list](#searching-in-circular-single-linked-list)
+- [Deletion in circular single linked list](#deletion-in-circular-single-linked-list)
+- [Deleting entire circular single linked list](#deleting-entire-circular-single-linked-list)
+- [Time and space complexity in circular single linked list](#time-and-space-complexity-in-circular-single-linked-list)
+- [double linked list](#double-linked-list)
+- [Insertion in double linked list](#insertion-in-double-linked-list)
+- [Traversal in double linked list](#traversal-in-double-linked-list)
+- [Reverse Traversal in double linked list](#reverse-traversal-in-double-linked-list)
+- [Searching in double linked list](#searching-in-double-linked-list)
+- [Deletion in double linked list](#deletion-in-double-linked-list)
+- [Deletion of entire double linked list](#deletion-of-entire-double-linked-list)
+- [Time and space complexity in double linked list](#time-and-space-complexity-in-double-linked-list)
+- [Circular double linked list](#circular-double-linked-list)
+- [Creation in circular double linked list](#creation-in-circular-double-linked-list)
+- [Insertion in circular double linked list](#insertion-in-circular-double-linked-list)
+- [Traversal in circular double linked list](#traversal-in-circular-double-linked-list)
+- [Reverse Traversal in circular double linked list](#reverse-traversal-in-circular-double-linked-list)
+- [Searching in circular double linked list](#searching-in-circular-double-linked-list)
+- [Deletion in circular double linked list](#deletion-in-circular-double-linked-list)
+- [Deleting entire circular double linked list](#deletion-in-circular-double-linked-list)
 - [Summary of time and space complexity](#summary-of-time-and-space-complexity)
 - [Time complexity of arrays vs linked list](#time-complexity-of-arrays-vs-linked-list)
 - [Project structure](#project-structure)
@@ -52,7 +52,7 @@
 
 # Introduction
 
-- Linked list is a form of sequential collection and it does not have to be in order. A linked list is made up of independent nodes that may contain any type of data and it has a reference to the next node in the link. 
+- Linked list is a form of sequential collection and it does not have to be in order. A linked list is made up of independent nodes that may contain any type of data and it has a reference to the next node(and sometimes previous node) in the link. 
 
 - The first node is called HEAD and the last node is called the TAIL of the linked list.
 
@@ -76,147 +76,147 @@ Since this is an beginner project in which the focus is just to learn the basics
 
 ## Types of linked list
 
-- Singly linked list(Example: any trivial application of a lined list)
-- Circular singly linked list(Example: a chess game in that how the turns switches among players)
-- Doubly linked list(Example: a music play list)
-- Circular doubly linked list(Example: ctrl+tab/ctrl+shift+tab function in Linux OS)
+- single linked list(Example: any trivial application of a lined list)
+- Circular single linked list(Example: a chess game in that how the turns switches among players)
+- double linked list(Example: a music play list)
+- Circular double linked list(Example: ctrl+tab/ctrl+shift+tab function in Linux OS)
 
 ## Linked list in memory
 
 - TODO: Add a diagram representing linked list in memory.
 
-# Singly linked list
+# single linked list
 
-## Creation in singly linked list
+## Creation in single linked list
 
-The creation of a singly linked list follows the following pseudo code:
+The creation of a single linked list follows the following pseudo code:
 
-- TODO: Add a diagram representing creation of singly linked list.
+- TODO: Add a diagram representing creation of single linked list.
 
 ## Insertion in Linked List in memory
 
-The following three variations are  possible for insertion in a singly linked list:
+The following three variations are  possible for insertion in a single linked list:
 
 - At the beginning of a linked list
 - After a node in the middle of linked list
 - At the end of a linked list
 
-- TODO: Create 3 diagrams showing step-by-step of insertion of Singly Linked List in memory. (89)
+- TODO: Create 3 diagrams showing step-by-step of insertion of single Linked List in memory. (89)
 
 
-## Traversal in singly linked list
+## Traversal in single linked list
 
-- TODO: Add a diagram depicting the traversal in a singly linked list. (91)
+- TODO: Add a diagram depicting the traversal in a single linked list. (91)
 Time complexity: O(n)
 
-## Searching in singly linked list
+## Searching in single linked list
 
-- TODO: Add a diagram depicting the searching a value in a singly linked list. (92)
+- TODO: Add a diagram depicting the searching a value in a single linked list. (92)
 Time complexity: O(n)
 
-## Deletion in Singly linked list
+## Deletion in single linked list
 
-- TODO: Add a diagram depicting the deletion in a singly linked list. (93)
+- TODO: Add a diagram depicting the deletion in a single linked list. (93)
 Time complexity: O(n)
 
-## Deleting entire singly linked list
-- TODO: Add a diagram depicting the deletion in a singly linked list. (95)
+## Deleting entire single linked list
+- TODO: Add a diagram depicting the deletion in a single linked list. (95)
 Time complexity: O(1)
 
-## Time and space complexity in singly linked list
-- TODO: Add a diagram depicting the deletion in a singly linked list. (96)
+## Time and space complexity in single linked list
+- TODO: Add a diagram depicting the deletion in a single linked list. (96)
 
 
-# Circular singly linked list
-- TODO: Add a diagram depicting the deletion in a singly linked list. (98) x2
+# Circular single linked list
+- TODO: Add a diagram depicting the deletion in a single linked list. (98) x2
 
-## Creation in Circular singly linked list
+## Creation in Circular single linked list
 -  Diagram with changes (3x) (99).
 - Time complexity of creation with one node: O(1).
 
-## Insertion in Circular singly linked list
+## Insertion in Circular single linked list
 -  Diagram with changes (1x) (100).
 - Time complexity of insertion of a node: O(n).
 
-## Traversal in circular singly linked list
+## Traversal in circular single linked list
 
-- TODO: Add a diagram depicting the traversal in a circular singly linked list. (102)
+- TODO: Add a diagram depicting the traversal in a circular single linked list. (102)
 Time complexity: O(n) 
 
-## Searching in circular singly linked list
+## Searching in circular single linked list
 
-- TODO: Add a diagram depicting the searching a value in a singly linked list. (103)
+- TODO: Add a diagram depicting the searching a value in a single linked list. (103)
 Time complexity: O(n)
 
-## Deletion in circular singly linked list
+## Deletion in circular single linked list
 
-- TODO: Add a diagram depicting the searching a value in a singly linked list. (104+105)
+- TODO: Add a diagram depicting the searching a value in a single linked list. (104+105)
 Time complexity: O(n)
 
-## Deleting entire circular singly linked list
+## Deleting entire circular single linked list
 Time complexity: O(1)
 
-## Time and space complexity in circular singly linked list
-- TODO: Add a diagram depicting the deletion in a singly linked list. (108)
+## Time and space complexity in circular single linked list
+- TODO: Add a diagram depicting the deletion in a single linked list. (108)
 
-# Doubly linked list
-- TODO: Add a diagram depicting the deletion in a doubly linked list. (110)---> Please double check the video number. 
+# double linked list
+- TODO: Add a diagram depicting the deletion in a double linked list. (110)---> Please double check the video number. 
 - Time complexity of creation with one node: O(1).
 
-## Insertion in Doubly linked list
-- TODO: Add a diagram depicting the deletion in a doubly linked list. (112)---> Please double check the video number.
+## Insertion in double linked list
+- TODO: Add a diagram depicting the deletion in a double linked list. (112)---> Please double check the video number.
 - Time complexity of creation with one node: O(1).
 
-## Traversal in Doubly linked list
-- TODO: Add a diagram depicting the deletion in a doubly linked list. (104)---> Please double check the video number.
+## Traversal in double linked list
+- TODO: Add a diagram depicting the deletion in a double linked list. (104)---> Please double check the video number.
 - Time complexity of creation with one node: O(n).
 
-## Reverse Traversal in Doubly linked list  
-- TODO: Add a diagram depicting the deletion in a doubly linked list. (105)---> Please double check the video number.
+## Reverse Traversal in double linked list  
+- TODO: Add a diagram depicting the deletion in a double linked list. (105)---> Please double check the video number.
 - Time complexity of traversal with one node: O(n).
 
-## Searching in Doubly linked list  
-- TODO: Add a diagram depicting the searching algorithm in a doubly linked list. (106)
+## Searching in double linked list  
+- TODO: Add a diagram depicting the searching algorithm in a double linked list. (106)
 - Time complexity of searching with one node: O(n).
 
-## Deletion in Doubly linked list  
-- TODO: Add a diagram depicting the searching algorithm in a doubly linked list. (108)
+## Deletion in double linked list  
+- TODO: Add a diagram depicting the searching algorithm in a double linked list. (108)
 - Time complexity of deletion with one node: O(n).
 
-## Deletion of Entire Doubly linked list  
+## Deletion of Entire double linked list  
 - Time complexity of deletion with one node: O(n).
 
-## Time and space complexity in Doubly linked list
- - Create a diagram describing time and space complexity for doubly linked list. (111)
+## Time and space complexity in double linked list
+ - Create a diagram describing time and space complexity for double linked list. (111)
 
-# Circular Doubly linked list
+# Circular double linked list
 
-## Creation in Circular Doubly linked list
-- TODO: Add a diagram depicting the creation of a circular doubly linked list. (113) 
+## Creation in Circular double linked list
+- TODO: Add a diagram depicting the creation of a circular double linked list. (113) 
 - Time complexity of creation with one node: O(1).
 
-## Insertion in Circular Doubly linked list
-- TODO: Add a diagram depicting the insertion algorithm for circular doubly linked list. (115) 
+## Insertion in Circular double linked list
+- TODO: Add a diagram depicting the insertion algorithm for circular double linked list. (115) 
 - Time complexity of creation with one node: O(n).
 
-## Traversal in Circular Doubly linked list
-- TODO: Add a diagram depicting the traversal algorithm for circular doubly linked list. (117) 
+## Traversal in Circular double linked list
+- TODO: Add a diagram depicting the traversal algorithm for circular double linked list. (117) 
 - Time complexity of creation with one node: O(n).
 
-## Reverse Traversal in Circular Doubly linked list
-- TODO: Add a diagram depicting the reverse traversal algorithm for circular doubly linked list. (118) 
+## Reverse Traversal in Circular double linked list
+- TODO: Add a diagram depicting the reverse traversal algorithm for circular double linked list. (118) 
 - Time complexity of creation with one node: O(n).
 
-## Searching in Circular Doubly linked list
-- TODO: Add a diagram depicting the searching algorithm for circular doubly linked list. (119)
+## Searching in Circular double linked list
+- TODO: Add a diagram depicting the searching algorithm for circular double linked list. (119)
 - Time complexity of creation with one node: O(n).
 
-## Deletion in Circular Doubly linked list
-- TODO: Add a diagram depicting the deletion algorithm for circular doubly linked list. (121)
+## Deletion in Circular double linked list
+- TODO: Add a diagram depicting the deletion algorithm for circular double linked list. (121)
 - Time complexity of creation with one node: O(n).
 
-## Deleting entire Circular Doubly linked list
-- Time complexity of Deleting entire Circular Doubly linked list: O(n).
+## Deleting entire Circular double linked list
+- Time complexity of Deleting entire Circular double linked list: O(n).
 
 ## Summary of time and space complexity
 - TODO: Add a diagram depicting the table of time and space complexities for circular double linked list. (124)
