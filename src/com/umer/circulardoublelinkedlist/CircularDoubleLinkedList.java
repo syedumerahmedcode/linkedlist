@@ -7,7 +7,7 @@ public class CircularDoubleLinkedList {
 
 	private static final String THE_CIRCULAR_DOUBLE_LINKED_LIST_DOES_NOT_EXIST = "The circular double linked list does not exist.";
 	private static final String THE_CIRCULAR_DOUBLE_LINKED_LIST_HAS_BEEN_DELETED = "The circular double linked list has been deleted.";
-	
+
 	public DoubleNode head;
 	public DoubleNode tail;
 	public int size = 0;
@@ -42,12 +42,16 @@ public class CircularDoubleLinkedList {
 			tail.next = newNode;
 			head = newNode;
 		} else if (location >= size) {
+			// Since the location is greater than the size of the node, This means that the
+			// node should be inserted at the end of the list.
 			newNode.next = head;
 			newNode.prev = tail;
 			head.prev = newNode;
 			tail.next = newNode;
 			tail = newNode;
 		} else {
+			// This means that we have to insert the node somewhere in the middle of the
+			// linked list
 			DoubleNode tempNode = head;
 			int index = 0;
 			while (index < location - 1) {
@@ -80,7 +84,6 @@ public class CircularDoubleLinkedList {
 		} else {
 			System.out.println(THE_CIRCULAR_DOUBLE_LINKED_LIST_DOES_NOT_EXIST);
 		}
-		System.out.println();
 	}
 
 	// Reverse Traversal
@@ -94,7 +97,6 @@ public class CircularDoubleLinkedList {
 				}
 				tempNode = tempNode.prev;
 			}
-
 		} else {
 			System.out.println(THE_CIRCULAR_DOUBLE_LINKED_LIST_DOES_NOT_EXIST);
 		}

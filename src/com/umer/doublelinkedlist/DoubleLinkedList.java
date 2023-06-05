@@ -12,6 +12,7 @@ public class DoubleLinkedList {
 	DoubleNode tail;
 	int size;
 
+	// Create Double Linked list
 	public DoubleNode createDoubleLinkedList(int nodeValue) {
 		head = new DoubleNode();
 		DoubleNode newNode = new DoubleNode();
