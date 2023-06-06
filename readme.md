@@ -102,7 +102,7 @@ The creation of a single linked list follows the following pseudo code:
 
 ## Insertion in Linked List in memory
 
-The following three variations are  possible for insertion in a single linked list:
+The following three variations are possible for insertion in a single linked list:
 
 - At the beginning of a linked list
 * We first check if the _head_ is null or not. If it is null,this means that the linked list does not exist yet and we call _create()_ instead.
@@ -205,6 +205,77 @@ return false;
 Time complexity: O(n)
 
 ## Deletion in single linked list
+
+The following three variations are possible for insertion in a single linked list:
+
+- At the beginning of a linked list
+* We first check if the _head_ is null or not. If it is null,this means that the linked list does not exist.
+* If the _head_ node is not null, then we check if the _location==0_. This means that delete should happen at the start of the list.   After deletion, we check if the size is equal to zero. If yes, _tail_ is set to null.
+
+This is achieved by doing the following:
+
+```java 
+if (head == null) {
+// Since head points to null, this means that there is no linked list present.
+System.out.println(SINGLE_LINKED_LIST_DOES_NOT_EXIST);
+} else if (location == 0) {
+// This means that we want to delete the first element in linked list
+
+// We set the head to its next element. By doing this, eventually the node will
+// be removed (eventually garbage collected)
+head = head.next;
+decreaseSize();
+if (size == 0) {
+	// Case where we have only one element in the linked list
+	tail = null;
+}
+}
+```
+  
+- At the end of a linked list
+* However, if _location >= size_, this means that the node should be deleted at the end of the list since the location is greater than the size of the node. We loop through the list till we come upon the node to delete. Now, if it is the first node(_head_), we set both _head_ and _tail_ to null. Else we set _tempNode.next = null_ and _tail = tempNode;_.  
+
+This is achieved by doing the following:
+
+```java 
+else if (location >= size) {
+// This means that we want to delete the last element in linked list
+Node tempNode = head;
+for (int i = 0; i < size - 1; i++) {
+	tempNode = tempNode.next;
+}
+if (tempNode == head) {
+	// Case where we have only one element in the linked list
+	tail = head = null;
+	decreaseSize();
+	return;
+}
+// more than one element in the linked list
+tempNode.next = null;
+tail = tempNode;
+decreaseSize();
+}
+```
+
+- A node somewhere in the middle of linked list.
+* If none of the above two conditions are fulfilled, it means that we have to delete the node somewhere in the middle of the linked list.
+
+First, we loop through till the position at which we want to insert the node. Then, the node is deleted as follows:
+
+```java
+// We are deleting an element from somewhere in the middle of the linked list
+Node tempNode = head;
+for (int i = 0; i < location - 1; i++) {
+	tempNode = tempNode.next;
+}
+// By doing this, we skip the node at the 'location', hence deleting it from the
+// memory
+tempNode.next = tempNode.next.next;
+decreaseSize();
+```
+
+Finally, the size of the linked list is decreased by one.   
+
 
 - TODO: Add a diagram depicting the deletion in a single linked list. (93)
 Time complexity: O(n)
