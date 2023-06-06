@@ -180,6 +180,27 @@ Time complexity: O(n)
 
 ## Searching in single linked list
 
+Here, we first check if the _head_ is null or not. If it is null, it means that the Single linked list does not exist.
+
+If it is not null, then we loop through the linked list and match the value of the node to given node. If the value of the node matches the given value, we return true. Otherwise, false is returned.
+
+This is achieved using the following code snippet:
+
+```java
+if (head != null) {
+Node tempNode = head;
+for (int i = 0; i < size; i++) {
+	if (tempNode.value == nodeValue) {
+		System.out.println("Found the node value " + nodeValue + " at location: " + i);
+		return true;
+		}
+		tempNode = tempNode.next;
+	}
+}
+System.out.println(NODE_VALUE_NOT_FOUND);
+return false;
+```
+
 - TODO: Add a diagram depicting the searching a value in a single linked list. (92)
 Time complexity: O(n)
 
