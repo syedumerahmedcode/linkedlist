@@ -159,6 +159,22 @@ Finally, the size of the linked list is increased by one.
 
 ## Traversal in single linked list
 
+Here, we first check if the _head_ is null or not. If it is null, it means that the Single linked list does not exist.
+
+If it is not null, then we loop through the linked list and print out each value one by one. This is achieved via the following code:
+
+```java
+Node tempNode = head;
+for (int index = 0; index < size; index++) {
+	System.out.print(tempNode.value);
+	if (index < size - 1) {
+		System.out.print(Constants.FORWARD_LINK);
+	}
+	tempNode = tempNode.next;
+}
+```
+ 
+
 - TODO: Add a diagram depicting the traversal in a single linked list. (91)
 Time complexity: O(n)
 
